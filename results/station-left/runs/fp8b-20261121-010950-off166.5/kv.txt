@@ -1,0 +1,4 @@
+(Worker_TP0_EP0 pid=769) INFO 11-21 09:23:13 [extensible_kv_cache.py:693] Memory after warmup: 36.77 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4209 KV cache blocks (23.24 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 224.41 GiB.
+(EngineCore pid=551) INFO 11-21 09:23:13 [kv_cache_utils.py:1134] GPU KV cache size: 269,376 tokens, Maximum concurrency for 163,840 tokens per request: 1.64x
+(Worker_TP0_EP0 pid=769) INFO 11-21 09:23:13 [extensible_kv_cache.py:536] Extended KV cache to 4209 blocks (23.24 GiB).
+(EngineCore pid=551) INFO 11-21 09:23:13 [core.py:449] init engine (profile, create kv cache, warmup model) took 478.37 s

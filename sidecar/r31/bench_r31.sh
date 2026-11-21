@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Copyright 2026 RonanLabs. Licensed under the Apache License 2.0.
+# bench_r31.sh OUTDIR SEEDBASE [REPS=3] (R3.1: bench_e3.sh + token-accurate realbench2.py + per-run DSpark acceptance)
+# was: bench_e3.sh OUTDIR SEEDBASE [REPS=3] -- run on .94 against the rank-0 container (NAME, default dsv4pro-e3).
+# catid 8K/1K random (vllm bench serve, ignore-eos) C1 (NP=3) and C16 (NP=32), REPS each, plus R2.3's held-out real-text
+# bench (realbench.py, thinking off, 1,024 forced tokens) C1 (n=3) and C16 (n=32), REPS each.
+# Hygiene (RECEIPT-AUDIT-PREFIX-CACHE.md): every catid run gets its own seed (SEEDBASE + 10*C + rep), the warm-up uses a
+# separate seed and a different shape, and each run's prefix-cache hit rate is measured from /metrics deltas
+# (vllm:prefix_cache_hits / vllm:prefix_cache_queries). A run with hit > 2% is marked CONTAMINATED and must not be reported.
+# Decode tok/s = C x 1000 / mean TPOT (same definition as bench-dsv4pro.sh / realbench.py).
+set -uo pipefail
+O=${1:?outdir}; SB=${2:?seedbase}; REPS=${3:-3}; N=${NAME:-dsv4pro-e3}; P=${PORT:-8010}; M=deepseek-v4-pro
+mkdir -p "$O"; S="$O/summary.txt"
+met() { curl -s http://127.0.0.1:$P/metrics | awk '/^vllm:prefix_cache_(hits|queries)_total/{split($1,a,"{"); v[a[1]]+=$NF} END{printf "%d %d\n", v["vllm:prefix_cache_hits_total"], v["vllm:prefix_cache_queries_total"]}'; }
+spec() { curl -s http://127.0.0.1:$P/metrics | awk '/^vllm:spec_decode_num_(drafts|draft_tokens|accepted_tokens)_total/{split($1,a,"{"); v[a[1]]+=$NF} END{printf "%d %d %d\n", v["vllm:spec_decode_num_drafts_total"], v["vllm:spec_decode_num_draft_tokens_total"], v["vllm:spec_decode_num_accepted_tokens_total"]}'; }
+acc() { python3 -c "d0,t0,a0,d1,t1,a1=map(float,'$1 $2'.split()); d=d1-d0; print(f'acc_len {1+(a1-a0)/d:.3f} accept_rate {(a1-a0)/max(1,t1-t0):.3f} drafts {int(d)}' if d>0 else 'no-spec')"; }
+hit() { python3 -c "h0,q0,h1,q1=map(float,'$1 $2'.split()); dq=q1-q0; r=(h1-h0)/dq if dq>0 else 0; print(f'{100*r:.2f}% ({int(h1-h0)}/{int(dq)} tok)' + (' CONTAMINATED' if r>0.02 else ''))"; }
+nvidia-smi --query-gpu=timestamp,name,power.draw,utilization.gpu,memory.used --format=csv -lms 2000 > "$O/power-left.csv" & PL=$!
+ssh -o BatchMode=yes exx@192.168.101.2 "mkdir -p $O; nohup nvidia-smi --query-gpu=timestamp,name,power.draw,utilization.gpu,memory.used --format=csv -lms 2000 > $O/power-right.csv 2>&1 & echo \$! > $O/power-right.pid"
+trap 'kill $PL 2>/dev/null; ssh -o BatchMode=yes exx@192.168.101.2 "kill \$(cat $O/power-right.pid) 2>/dev/null"' EXIT
+B=(docker exec "$N" vllm bench serve --backend vllm --base-url http://127.0.0.1:$P --model $M --tokenizer /model --trust-remote-code)
+"${B[@]}" --dataset-name random --random-input-len 512 --random-output-len 64 --num-prompts 4 --max-concurrency 4 --ignore-eos \
+  --seed $((SB + 900)) > "$O/warmup.log" 2>&1
+echo "== $(date '+%F %T') seedbase $SB" | tee -a "$S"
+for C in 1 16; do
+  NP=$([ $C = 1 ] && echo 3 || echo 32)
+  for R in $(seq 1 "$REPS"); do
+    SEED=$((SB + 10 * C + R)); m0=$(met); s0=$(spec)
+    "${B[@]}" --dataset-name random --random-input-len 8192 --random-output-len 1024 --num-prompts $NP --max-concurrency $C \
+      --ignore-eos --seed $SEED --percentile-metrics ttft,tpot,itl --metric-percentiles 50,90 > "$O/catid-c$C-r$R.log" 2>&1
+    m1=$(met); s1=$(spec); T=$(awk '/Mean TPOT/{print $NF}' "$O/catid-c$C-r$R.log"); F=$(awk '/Failed requests/{print $NF}' "$O/catid-c$C-r$R.log")
+    echo "catid C$C rep$R seed $SEED: decode_agg $(python3 -c "print(round($C*1000/float('$T'),2))") (TPOT $T ms) failed ${F:-?} hit $(hit "$m0" "$m1") $(acc "$s0" "$s1")" | tee -a "$S"
+  done
+done
+for C in 1 16; do
+  NN=$([ $C = 1 ] && echo 3 || echo 32)
+  for R in $(seq 1 "$REPS"); do
+    m0=$(met); s0=$(spec)
+    python3 "$HOME/r31/realbench2.py" http://127.0.0.1:$P $M "$O/real-c$C-r$R.json" $C $NN > "$O/real-c$C-r$R.log" 2>&1
+    m1=$(met); s1=$(spec)
+    echo "real C$C rep$R: $(tail -1 "$O/real-c$C-r$R.log") hit $(hit "$m0" "$m1") $(acc "$s0" "$s1")" | tee -a "$S"
+  done
+done
+echo "DONE $(date +%T)" | tee -a "$S"

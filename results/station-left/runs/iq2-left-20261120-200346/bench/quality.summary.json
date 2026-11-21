@@ -1,0 +1,50 @@
+{
+ "gsm8k:high": {
+  "accuracy": 0.975,
+  "cap_hits": 1,
+  "correct": 39,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 40,
+  "wilson95": [
+   0.8711863103652591,
+   0.9955731684973186
+  ]
+ },
+ "gsm8k:no_think": {
+  "accuracy": 0.968,
+  "cap_hits": 1,
+  "correct": 484,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 500,
+  "wilson95": [
+   0.9486551309545582,
+   0.9802084863734289
+  ]
+ },
+ "mmlu_pro:high": {
+  "accuracy": 0.775,
+  "cap_hits": 7,
+  "correct": 31,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 40,
+  "wilson95": [
+   0.6249690325768998,
+   0.8768390867645925
+  ]
+ },
+ "mmlu_pro:no_think": {
+  "accuracy": 0.834,
+  "cap_hits": 44,
+  "correct": 417,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 500,
+  "wilson95": [
+   0.7988646838026933,
+   0.8640422567689898
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "needle-128k-s11": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ },
+ "needle-128k-s12": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ },
+ "needle-128k-s13": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ },
+ "needle-32k-s11": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ },
+ "needle-32k-s12": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ },
+ "needle-32k-s13": {
+  "all_found": true,
+  "gates_ok": true,
+  "hits": [
+   true,
+   true,
+   true
+  ]
+ }
+}

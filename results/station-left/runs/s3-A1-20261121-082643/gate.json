@@ -1,0 +1,27 @@
+{
+ "rank0": {
+  "checks": 148,
+  "layers_checked": 37,
+  "missing_layers": [],
+  "below_0.97": {},
+  "timeouts_in_checks": 0,
+  "identity_fail_layers": [],
+  "cos_min": 0.988256,
+  "cos_mean": 0.99128,
+  "worst_layer": 27,
+  "pass": true
+ },
+ "rank1": {
+  "checks": 148,
+  "layers_checked": 37,
+  "missing_layers": [],
+  "below_0.97": {},
+  "timeouts_in_checks": 0,
+  "identity_fail_layers": [],
+  "cos_min": 0.988699,
+  "cos_mean": 0.991301,
+  "worst_layer": 35,
+  "pass": true
+ },
+ "PASS": true
+}

@@ -1,0 +1,13 @@
+/models/Hy4-GGUF/Hy4-IQ2.gguf: OK
+version: 1.0.0-dev (build 12537, commit f8d4cc414)
+built with GNU 13.3.0 for Linux aarch64
+load_to_health_s 45
+{
+ "logprobs": {
+  "probes": 2880,
+  "gate_failures": 2,
+  "no_probs_incomplete_utf8": 2,
+  "topk": 64,
+  "corpus_sha256": "168d3dadfe4d4eca4c297053eafd0f07d44721c82b5e19e64cc698b75d1f4923"
+ }
+}

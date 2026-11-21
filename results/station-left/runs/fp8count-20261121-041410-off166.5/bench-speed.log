@@ -1,0 +1,37 @@
+{
+ "speed": {
+  "c1": {
+   "rounds": [
+    {
+     "round": 0,
+     "warm": false,
+     "completion_tokens": 8192,
+     "wall_s": 290.8231691219844,
+     "throughput_tps": 28.168498553801594,
+     "gates_ok": true,
+     "elapsed": 290.82802534801885,
+     "mean_decode_tps_per_reply": 29.273097589203154
+    }
+   ],
+   "mean_tps": 28.168498553801594,
+   "cv": null,
+   "all_gates_ok": true
+  },
+  "c16": {
+   "rounds": [
+    {
+     "round": 0,
+     "warm": false,
+     "completion_tokens": 8192,
+     "wall_s": 83.55726559797768,
+     "throughput_tps": 98.04054670020544,
+     "gates_ok": true,
+     "elapsed": 83.55826058099046
+    }
+   ],
+   "mean_tps": 98.04054670020544,
+   "cv": null,
+   "all_gates_ok": true
+  }
+ }
+}

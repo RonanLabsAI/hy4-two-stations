@@ -1,0 +1,4 @@
+16:python3 -I "$HARNESS" logprobs --base "$BASE" --engine llamacpp --rung "$RUNG" --out "$OUT/bench" 2>&1 | tee "$OUT/bench.log"
+2026-11-20 21:59:16 start lp rerun right-q4_k_m
+2026-11-20 22:20:00 end lp rerun right-q4_k_m rc=0
+LP_RERUN_END

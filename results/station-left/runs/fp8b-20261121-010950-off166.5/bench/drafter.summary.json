@@ -1,0 +1,29 @@
+{
+ "draft-128k": {
+  "acceptance_median": 0.6158730158730159,
+  "decode_tps_median": 37.5889560168186,
+  "gates_ok": true,
+  "length": 131072,
+  "mean_accepted_len_median": 4.079365079365079,
+  "ms_per_step_median": 107.68107115845417,
+  "reps": 3
+ },
+ "draft-16k": {
+  "acceptance_median": 0.5701492537313433,
+  "decode_tps_median": 35.872156467843475,
+  "gates_ok": true,
+  "length": 16384,
+  "mean_accepted_len_median": 3.8507462686567164,
+  "ms_per_step_median": 106.4089650612776,
+  "reps": 3
+ },
+ "draft-2k": {
+  "acceptance_median": 0.5083333333333333,
+  "decode_tps_median": 33.333799483945995,
+  "gates_ok": true,
+  "length": 2048,
+  "mean_accepted_len_median": 3.5416666666666665,
+  "ms_per_step_median": 106.26607987473511,
+  "reps": 3
+ }
+}

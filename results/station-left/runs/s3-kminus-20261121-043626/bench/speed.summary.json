@@ -1,0 +1,92 @@
+{
+ "c1": {
+  "all_gates_ok": true,
+  "cv": 0.0012026378027698342,
+  "mean_tps": 27.174579651903343,
+  "rounds": [
+   {
+    "completion_tokens": 8192,
+    "elapsed": 302.8145112459315,
+    "gates_ok": true,
+    "mean_decode_tps_per_reply": 28.05035676461415,
+    "round": 0,
+    "throughput_tps": 27.053400507896026,
+    "wall_s": 302.81032721698284,
+    "warm": true
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 301.8791334560374,
+    "gates_ok": true,
+    "mean_decode_tps_per_reply": 27.912561214063306,
+    "round": 1,
+    "throughput_tps": 27.136890556260113,
+    "wall_s": 301.87866500602104,
+    "warm": false
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 301.2332775259856,
+    "gates_ok": true,
+    "mean_decode_tps_per_reply": 27.914011880355922,
+    "round": 2,
+    "throughput_tps": 27.195069911382777,
+    "wall_s": 301.23285432206467,
+    "warm": false
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 301.2697281369474,
+    "gates_ok": true,
+    "mean_decode_tps_per_reply": 27.9102648803593,
+    "round": 3,
+    "throughput_tps": 27.191778488067136,
+    "wall_s": 301.26931965502445,
+    "warm": false
+   }
+  ]
+ },
+ "c16": {
+  "all_gates_ok": true,
+  "cv": 5.97241474354754e-05,
+  "mean_tps": 95.16981078342735,
+  "rounds": [
+   {
+    "completion_tokens": 8192,
+    "elapsed": 86.10868311300874,
+    "gates_ok": true,
+    "round": 0,
+    "throughput_tps": 95.13659941909732,
+    "wall_s": 86.10776557098143,
+    "warm": true
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 86.08282207197044,
+    "gates_ok": true,
+    "round": 1,
+    "throughput_tps": 95.16522874514024,
+    "wall_s": 86.08186107489746,
+    "warm": false
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 86.07312603399623,
+    "gates_ok": true,
+    "round": 2,
+    "throughput_tps": 95.17617130133009,
+    "wall_s": 86.07196410605684,
+    "warm": false
+   },
+   {
+    "completion_tokens": 8192,
+    "elapsed": 86.08022836002056,
+    "gates_ok": true,
+    "round": 3,
+    "throughput_tps": 95.1680323038117,
+    "wall_s": 86.07932518608868,
+    "warm": false
+   }
+  ]
+ }
+}

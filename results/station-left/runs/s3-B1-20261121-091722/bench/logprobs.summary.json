@@ -1,0 +1,7 @@
+{
+ "corpus_sha256": "168d3dadfe4d4eca4c297053eafd0f07d44721c82b5e19e64cc698b75d1f4923",
+ "gate_failures": 0,
+ "no_probs_incomplete_utf8": 0,
+ "probes": 2880,
+ "topk": 64
+}

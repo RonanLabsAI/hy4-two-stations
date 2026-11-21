@@ -1,0 +1,9 @@
+2026-11-21 01:09:02 stage-1 work finished on both Stations
+2026-11-21 01:09:02 B load OFFGB=166.5 -> /home/exx/l6-4h/runs/fp8b-20261121-010902-off166.5
+B: LOGDIR=/home/exx/l6-4h/runs/fp8b-20261121-010902-off166.5 E3HOOK=0 OFFGB=166.5 CTX=163840 SEQS=16 EXTRA_ARGS='--max-logprobs 64 --enable-prompt-tokens-details'
+WEIGHTS MISSING/INCOMPLETE on sn4622130924: /models/Hy4-FP8 (want 245 shards)
+2026-11-21 01:09:02 B load failed (not memory): stop
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+STAGE2B_END

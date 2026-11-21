@@ -1,0 +1,19 @@
+/models/Hy4-GGUF/Hy4-Q4_K_M.gguF: OK
+version: 1.0.0-dev (build 12537, commit f8d4cc414)
+built with GNU 13.3.0 for Linux aarch64
+load_to_health_s 60
+Traceback (most recent call last):
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 513, in <module>
+    if name == 'check' and not (results[name]['prompt_gate'] and results[name]['detok_match']):
+         ^^^^^^
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 503, in main
+    c = Client(args.base, args.engine, args.model)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 456, in cmd_logprobs
+    corpus = load('logprob_corpus.json')
+                                  ^^^^^^^
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 131, in topk
+    eog_retry = False
+         ^^^^^^^^^^^^^
+KeyError: 'completion_probabilities'
+/home/exx/l6-4h/tools/hy4/stage1/common.sh: line 71: 4066022 Aborted                 (core dumped) env CUDA_VISIBLE_DEVICES="$VISIBLE" "$BIN/llama-server" -m "$GGUF" --host 127.0.0.1 --port "$PORT" --metrics --jinja -sp -fit off -fa on -lm none -np 16 -kvu -c 163840 -b 4096 -ub 2048 -t 64 -tb 72 "$@" > "$OUT/server.log" 2>&1

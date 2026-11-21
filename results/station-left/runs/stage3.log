@@ -1,0 +1,106 @@
+2026-11-21 07:40:44 kminus: B load -> /home/exx/l6-4h/runs/s3-kminus-20261121-074044 (SPEC=0)
+(Worker_TP0_EP0 pid=488) INFO 11-21 15:45:26 [model_runner.py:455] Model loading took 206.28 GiB memory and 228.633343 seconds
+(EngineCore pid=270) INFO 11-21 15:45:26 [utils.py:428] Using LBNHC KV cache layout.
+sn4622130925:488:648 [0] NCCL INFO NET/IB: ncclIbCreateFlushQp: Flush QP created: port=1 dev=0 devName=mlx5_1_dma ndevs=1 nmdevs=1 qp_num=1263 pke(Worker_TP0_EP0 pid=488) INFO 11-21 15:45:33 [encoder_runner.py:155] Encoder cache can hold 10240 tokens of video embeddings across requests (0.12 GiB, taken from the KV cache).
+(Worker_TP0_EP0 pid=488) INFO 11-21 15:45:43 [gpu_worker.py:847] Available KV cache memory: 27.09 GiB
+(Worker_TP0_EP0 pid=488) WARNING 11-21 15:47:01 [extensible_kv_cache.py:662] gpu_memory_utilization=0.95 caps this instance at 237.32 GiB, keeping 9.07 GiB of free device memory out of the KV cache. The extensible KV cache is sized from the memory measured after warmup and CUDA graph capture, so vLLM's own use needs no headroom below 1.0. Leave gpu_memory_utilization unset unless it leaves room for memory vLLM does not measure: other processes sharing the GPU (including ones that allocate on it later), the CPU on a unified-memory device, weight transfer buffers for weight updates, or a KV connector's own device buffers.
+(Worker_TP0_EP0 pid=488) INFO 11-21 15:47:01 [extensible_kv_cache.py:693] Memory after warmup: 39.95 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4778 KV cache blocks (26.38 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 221.26 GiB.
+(EngineCore pid=270) INFO 11-21 15:47:01 [kv_cache_utils.py:1134] GPU KV cache size: 305,792 tokens, Maximum concurrency for 163,840 tokens per request: 1.87x
+(Worker_TP0_EP0 pid=488) INFO 11-21 15:47:01 [extensible_kv_cache.py:536] Extended KV cache to 4778 blocks (26.41 GiB).
+(Worker_TP0_EP0 pid=488) INFO 11-21 15:42:12 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=336) INFO 11-21 15:42:10 [uva.py:68] Total CPU offloaded parameters: 166.5
+2026-11-21 08:16:21 K- (SPEC=0) C1 25.378468901137424 tok/s ratio 0.9192 (must be < 0.95); C16 72.94520773784751 ratio 0.7825 (reported)
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+tail: option used in invalid context -- 3
+2026-11-21 08:26:43 A1: A load -> /home/exx/l6-4h/runs/s3-A1-20261121-082643 (E3ROWMAP=rowmap-hy4-v1-mxfp4.json E3_CHECK=4 E3_CHECK_MIN_T=1024)
+E3 rowmap /e3/rowmaps/rowmap-hy4-v1-mxfp4.json: 37 layers, 8566 warm experts (both ranks)
+E3 peer on /dev/shm/e3_hy4_peer: sidecar serving ep_rank=0 hash=0x2159065ffeb553e8 max_rows=8192 timeout_spins=20000000
+E3 layer 1 (language_model.model.layers.1.mlp.experts): ep_rank 0, 128 local, 118 warm on the 6000, w13 offloaded=True, quant=CompressedTensorsW8A8Fp8MoEMethod, e2=off
+(Worker_TP0_EP0 pid=552) INFO 11-21 16:31:26 [gpu_worker.py:847] Available KV cache memory: 24.33 GiB
+(Worker_TP0_EP0 pid=552) WARNING 11-21 16:32:54 [extensible_kv_cache.py:662] gpu_memory_utilization=0.95 caps this instance at 237.32 GiB, keeping 9.07 GiB of free device memory out of the KV cache. The extensible KV cache is sized from the memory measured after warmup and CUDA graph capture, so vLLM's own use needs no headroom below 1.0. Leave gpu_memory_utilization unset unless it leaves room for memory vLLM does not measure: other processes sharing the GPU (including ones that allocate on it later), the CPU on a unified-memory device, weight transfer buffers for weight updates, or a KV connector's own device buffers.
+(Worker_TP0_EP0 pid=552) INFO 11-21 16:32:54 [extensible_kv_cache.py:693] Memory after warmup: 36.77 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4209 KV cache blocks (23.24 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 224.41 GiB.
+(EngineCore pid=270) INFO 11-21 16:32:54 [kv_cache_utils.py:1134] GPU KV cache size: 269,376 tokens, Maximum concurrency for 163,840 tokens per request: 1.64x
+(Worker_TP0_EP0 pid=552) INFO 11-21 16:32:54 [extensible_kv_cache.py:536] Extended KV cache to 4209 blocks (23.24 GiB).
+(Worker_TP0_EP0 pid=552) INFO 11-21 16:27:56 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=336) INFO 11-21 16:27:56 [uva.py:68] Total CPU offloaded parameters: 166.5
+  "missing_layers": [],
+  "timeouts_in_checks": 0,
+  "identity_fail_layers": [],
+  "cos_min": 0.988256,
+  "missing_layers": [],
+  "timeouts_in_checks": 0,
+  "identity_fail_layers": [],
+  "cos_min": 0.988699,
+ "PASS": true
+2026-11-21 08:33:47 A1 gate rc=0 (MIN_COS=0.97)
+2026-11-21 08:47:56 A1 speed rc=0
+2026-11-21 08:48:23 A1 prefill rc=0
+2026-11-21 09:04:02 A1 logprobs rc=0
+2026-11-21 09:14:32 A1 quality rc=0
+2026-11-21 09:16:36 A1 needle rc=0
+rm: cannot remove '/dev/shm/e3_hy4_peer': Operation not permitted
+rm: cannot remove '/dev/shm/e3_hy4_peer': Operation not permitted
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+2026-11-21 09:17:22 B1: B load -> /home/exx/l6-4h/runs/s3-B1-20261121-091722 ()
+(Worker_TP0_EP0 pid=488) INFO 11-21 17:21:51 [model_runner.py:455] Model loading took 209.03 GiB memory and 207.464327 seconds
+(EngineCore pid=270) INFO 11-21 17:21:52 [utils.py:428] Using LBNHC KV cache layout.
+sn4622130925:488:648 [0] NCCL INFO NET/IB: ncclIbCreateFlushQp: Flush QP created: port=1 dev=0 devName=mlx5_1_dma ndevs=1 nmdevs=1 qp_num=1399 pke(Worker_TP0_EP0 pid=488) INFO 11-21 17:21:59 [encoder_runner.py:155] Encoder cache can hold 10240 tokens of video embeddings across requests (0.12 GiB, taken from the KV cache).
+(Worker_TP0_EP0 pid=488) INFO 11-21 17:22:10 [gpu_worker.py:847] Available KV cache memory: 24.33 GiB
+(Worker_TP0_EP0 pid=488) WARNING 11-21 17:23:41 [extensible_kv_cache.py:662] gpu_memory_utilization=0.95 caps this instance at 237.32 GiB, keeping 9.06 GiB of free device memory out of the KV cache. The extensible KV cache is sized from the memory measured after warmup and CUDA graph capture, so vLLM's own use needs no headroom below 1.0. Leave gpu_memory_utilization unset unless it leaves room for memory vLLM does not measure: other processes sharing the GPU (including ones that allocate on it later), the CPU on a unified-memory device, weight transfer buffers for weight updates, or a KV connector's own device buffers.
+(Worker_TP0_EP0 pid=488) INFO 11-21 17:23:41 [extensible_kv_cache.py:693] Memory after warmup: 36.77 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4209 KV cache blocks (23.24 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 224.41 GiB.
+(EngineCore pid=270) INFO 11-21 17:23:41 [kv_cache_utils.py:1134] GPU KV cache size: 269,376 tokens, Maximum concurrency for 163,840 tokens per request: 1.64x
+(Worker_TP0_EP0 pid=488) INFO 11-21 17:23:41 [extensible_kv_cache.py:536] Extended KV cache to 4209 blocks (23.24 GiB).
+(Worker_TP0_EP0 pid=488) INFO 11-21 17:18:39 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=336) INFO 11-21 17:18:39 [uva.py:68] Total CPU offloaded parameters: 166.5
+2026-11-21 10:02:01 B1 speed rc=0
+2026-11-21 10:02:51 B1 prefill rc=0
+2026-11-21 10:20:13 B1 logprobs rc=0
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+2026-11-21 10:20:57 B2: B load -> /home/exx/l6-4h/runs/s3-B2-20261121-102057 ()
+(Worker_TP0_EP0 pid=488) INFO 11-21 18:25:25 [model_runner.py:455] Model loading took 209.03 GiB memory and 207.873993 seconds
+(EngineCore pid=270) INFO 11-21 18:25:44 [utils.py:428] Using LBNHC KV cache layout.
+sn4622130925:488:648 [0] NCCL INFO NET/IB: ncclIbCreateFlushQp: Flush QP created: port=1 dev=0 devName=mlx5_1_dma ndevs=1 nmdevs=1 qp_num=1467 pkey=(Worker_TP0_EP0 pid=488) INFO 11-21 18:25:51 [encoder_runner.py:155] Encoder cache can hold 10240 tokens of video embeddings across requests (0.12 GiB, taken from the KV cache).
+(Worker_TP0_EP0 pid=488) INFO 11-21 18:26:02 [gpu_worker.py:847] Available KV cache memory: 24.33 GiB
+(Worker_TP0_EP0 pid=488) WARNING 11-21 18:27:34 [extensible_kv_cache.py:662] gpu_memory_utilization=0.95 caps this instance at 237.32 GiB, keeping 9.06 GiB of free device memory out of the KV cache. The extensible KV cache is sized from the memory measured after warmup and CUDA graph capture, so vLLM's own use needs no headroom below 1.0. Leave gpu_memory_utilization unset unless it leaves room for memory vLLM does not measure: other processes sharing the GPU (including ones that allocate on it later), the CPU on a unified-memory device, weight transfer buffers for weight updates, or a KV connector's own device buffers.
+(Worker_TP0_EP0 pid=488) INFO 11-21 18:27:34 [extensible_kv_cache.py:693] Memory after warmup: 36.77 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4209 KV cache blocks (23.24 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 224.41 GiB.
+(EngineCore pid=270) INFO 11-21 18:27:34 [kv_cache_utils.py:1134] GPU KV cache size: 269,376 tokens, Maximum concurrency for 163,840 tokens per request: 1.64x
+(Worker_TP0_EP0 pid=488) INFO 11-21 18:27:34 [extensible_kv_cache.py:536] Extended KV cache to 4209 blocks (23.24 GiB).
+(Worker_TP0_EP0 pid=488) INFO 11-21 18:22:12 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=336) INFO 11-21 18:22:30 [uva.py:68] Total CPU offloaded parameters: 166.5
+2026-11-21 11:05:55 B2 speed rc=0
+2026-11-21 11:06:46 B2 prefill rc=0
+2026-11-21 11:23:59 B2 logprobs rc=0
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+tail: option used in invalid context -- 3
+2026-11-21 11:28:10 A2: A load -> /home/exx/l6-4h/runs/s3-A2-20261121-112810 (E3ROWMAP=rowmap-hy4-v1-mxfp4.json)
+E3 rowmap /e3/rowmaps/rowmap-hy4-v1-mxfp4.json: 37 layers, 8566 warm experts (both ranks)
+E3 peer on /dev/shm/e3_hy4_peer: sidecar serving ep_rank=0 hash=0x2159065ffeb553e8 max_rows=8192 timeout_spins=20000000
+E3 layer 1 (language_model.model.layers.1.mlp.experts): ep_rank 0, 128 local, 118 warm on the 6000, w13 offloaded=True, quant=CompressedTensorsW8A8Fp8MoEMethod, e2=off
+(Worker_TP0_EP0 pid=552) INFO 11-21 19:32:47 [gpu_worker.py:847] Available KV cache memory: 24.33 GiB
+(Worker_TP0_EP0 pid=552) WARNING 11-21 19:34:16 [extensible_kv_cache.py:662] gpu_memory_utilization=0.95 caps this instance at 237.32 GiB, keeping 9.07 GiB of free device memory out of the KV cache. The extensible KV cache is sized from the memory measured after warmup and CUDA graph capture, so vLLM's own use needs no headroom below 1.0. Leave gpu_memory_utilization unset unless it leaves room for memory vLLM does not measure: other processes sharing the GPU (including ones that allocate on it later), the CPU on a unified-memory device, weight transfer buffers for weight updates, or a KV connector's own device buffers.
+(Worker_TP0_EP0 pid=552) INFO 11-21 19:34:16 [extensible_kv_cache.py:693] Memory after warmup: 36.77 GiB free, 0.19 GiB committed to the KV cache, 2.64 GiB kept for transient activations (2.64 GiB allocated at peak, 2.61 GiB of torch reservation growth); 4209 KV cache blocks (23.24 GiB) fit within the requested 237.32 GiB. Torch may reserve up to 224.41 GiB.
+(EngineCore pid=270) INFO 11-21 19:34:16 [kv_cache_utils.py:1134] GPU KV cache size: 269,376 tokens, Maximum concurrency for 163,840 tokens per request: 1.64x
+(Worker_TP0_EP0 pid=552) INFO 11-21 19:34:16 [extensible_kv_cache.py:536] Extended KV cache to 4209 blocks (23.24 GiB).
+(Worker_TP0_EP0 pid=552) INFO 11-21 19:29:17 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=336) INFO 11-21 19:29:18 [uva.py:68] Total CPU offloaded parameters: 166.5
+2026-11-21 11:48:48 A2 speed rc=0
+2026-11-21 11:49:15 A2 prefill rc=0
+2026-11-21 12:05:01 A2 logprobs rc=0
+2026-11-21 12:15:47 A2 quality rc=0
+2026-11-21 12:17:51 A2 needle rc=0
+rm: cannot remove '/dev/shm/e3_hy4_peer': Operation not permitted
+rm: cannot remove '/dev/shm/e3_hy4_peer': Operation not permitted
+sn4622130925: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+right: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 47 MiB;NVIDIA GB300, 22 MiB;
+(GB300 should be back to ~22 MiB on both; if HBM stays stranded: STOP and report, no reboot)
+/home/exx/l6-4h/runs/s3-A1-20261121-082643/e3-stats-rank0.json {'published': 960586, 'completed': 960586, 'timeouts': 0, 'rows': 55478815, 'tokens': 55918424, 'wait_ns': 327400269376, 'waits': 960142}
+/home/exx/l6-4h/runs/s3-A2-20261121-112810/e3-stats-rank0.json {'published': 963961, 'completed': 963961, 'timeouts': 0, 'rows': 54216464, 'tokens': 54653033, 'wait_ns': 317321750432, 'waits': 963517}
+STAGE3_END

@@ -1,0 +1,45 @@
+== mxfp4 layer 1 04:01:02
+hy4 layer=1 experts=36 wfmt=mxfp4 layout=w31 T=64: cos(b12x, emu)=0.999911 cos(b12x, fp8 ref)=0.986340 cos(emu, fp8 ref)=0.986430 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> PASS
+rc=0
+== mxfp4 layer 20 04:01:46
+hy4 layer=20 experts=36 wfmt=mxfp4 layout=w31 T=64: cos(b12x, emu)=0.999911 cos(b12x, fp8 ref)=0.980818 cos(emu, fp8 ref)=0.980905 |b12x|/|emu|=0.9998 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> PASS
+rc=0
+== mxfp4 layer 40 04:02:22
+hy4 layer=40 experts=36 wfmt=mxfp4 layout=w31 T=64: cos(b12x, emu)=0.999911 cos(b12x, fp8 ref)=0.980068 cos(emu, fp8 ref)=0.980157 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> PASS
+rc=0
+== mxfp4 layer 60 04:02:56
+hy4 layer=60 experts=36 wfmt=mxfp4 layout=w31 T=64: cos(b12x, emu)=0.999910 cos(b12x, fp8 ref)=0.978472 cos(emu, fp8 ref)=0.978558 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> PASS
+rc=0
+== mxfp4 layer 77 04:03:28
+hy4 layer=77 experts=36 wfmt=mxfp4 layout=w31 T=64: cos(b12x, emu)=0.999910 cos(b12x, fp8 ref)=0.979890 cos(emu, fp8 ref)=0.979983 |b12x|/|emu|=0.9998 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> PASS
+rc=0
+== mxfp8 layer 1 04:04:00
+hy4 layer=1 experts=36 wfmt=mxfp8 layout=w31 T=64: cos(b12x, emu)=0.999909 cos(b12x, fp8 ref)=0.997727 cos(emu, fp8 ref)=0.997819 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.995 -> PASS
+rc=0
+== mxfp8 layer 20 04:04:41
+hy4 layer=20 experts=36 wfmt=mxfp8 layout=w31 T=64: cos(b12x, emu)=0.999909 cos(b12x, fp8 ref)=0.997061 cos(emu, fp8 ref)=0.997152 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.995 -> PASS
+rc=0
+== mxfp8 layer 40 04:05:19
+hy4 layer=40 experts=36 wfmt=mxfp8 layout=w31 T=64: cos(b12x, emu)=0.999910 cos(b12x, fp8 ref)=0.997034 cos(emu, fp8 ref)=0.997120 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.995 -> PASS
+rc=0
+== mxfp8 layer 60 04:05:55
+hy4 layer=60 experts=36 wfmt=mxfp8 layout=w31 T=64: cos(b12x, emu)=0.999908 cos(b12x, fp8 ref)=0.996844 cos(emu, fp8 ref)=0.996934 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.995 -> PASS
+rc=0
+== mxfp8 layer 77 04:06:27
+hy4 layer=77 experts=36 wfmt=mxfp8 layout=w31 T=64: cos(b12x, emu)=0.999907 cos(b12x, fp8 ref)=0.996953 cos(emu, fp8 ref)=0.997051 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.995 -> PASS
+rc=0
+== control: swapped w13 layout must FAIL
+hy4 layer=20 experts=36 wfmt=mxfp4 layout=w13 T=64: cos(b12x, emu)=0.999912 cos(b12x, fp8 ref)=0.542568 cos(emu, fp8 ref)=0.542615 |b12x|/|emu|=0.9999 finite=True
+gate: cos(b12x, emu)>=0.999 and cos(b12x, fp8 ref)>=0.97 -> FAIL
+rc=1
+B12X_DONE

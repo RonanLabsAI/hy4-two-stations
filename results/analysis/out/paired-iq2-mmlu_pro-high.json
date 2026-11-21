@@ -1,0 +1,15 @@
+{
+ "a_acc": 0.8,
+ "b_acc": 0.775,
+ "diff_b_minus_a": -0.025,
+ "discordant": {
+  "a_only": 2,
+  "b_only": 1
+ },
+ "mcnemar_exact_p": 1.0,
+ "n": 40,
+ "newcombe95": [
+  -0.13215273300661395,
+  0.07990471361319534
+ ]
+}

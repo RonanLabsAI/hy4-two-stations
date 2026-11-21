@@ -1,0 +1,23 @@
+dsv4pro-sidecar: RTX PRO 6000 warm-expert sidecar for DeepSeek-V4-Pro-0813 (TP2+EP2, two DGX Station GB300)
+Modifications Copyright 2026 RonanLabs. Licensed under the Apache License 2.0 (see LICENSE).
+
+This tree is derived from "DGX Station GB300 serving research"
+(https://github.com/original-el8/dgx-station-gb300-research, commit 7699ae54), Copyright 2026 Jason Cook,
+Apache License 2.0. Derived files (each carries a header naming its source):
+  - hook/peer_tier_v4.py      <- deepseek-v4.1-flash/m3/hook/peer_tier2.py (modified: 7,168 hidden, BF16 rows,
+                                 handshake table, per-layer warm counts)
+  - hook/e3_hook.py           <- deepseek-v4.1-flash/m3/hook/mega_peer_hook.py (rewritten for vLLM's generic
+                                 RoutedExperts / marlin MXFP4 path used by deepseek_v4 in nightly-af7f9488)
+  - sidecar/peer_server_v4.py <- deepseek-v4.1-flash/m3/sidecar/peer_server2.py (modified: V4-Pro geometry,
+                                 per-layer warm counts, per-EP-rank expert selection, A16 default)
+  - hook/sitecustomize.py     <- deepseek-v4.1-flash/m3/hook/sitecustomize.py, itself modified from J&M Recipes
+                                 (Copyright 2026 J&M Recipes, MIT License; licenses/J-M-Recipes-MIT.txt)
+
+The sidecar imports b12x (https://github.com/local-inference-lab/b12x, master 2cc7f66a) at run time; b12x is not
+vendored here.
+
+hy4-sidecar (branch feat/hy4-sidecar, 2026-11-20): port to Tencent Hy4-FP8 on vllm/vllm-openai:hy4. The derived files
+above were further modified (geometry from config.json via hook/geometry.py, Hy4 layer names, block-FP8 -> MXFP4 /
+MXFP8 conversion in the sidecar, count-only hook mode); new files (hook/geometry.py, sidecar/fp8_convert.py,
+tools/offline_gate.py, tools/hy4_budget.py, tools/fetch_*.py, launch/hy4/*, tests/test_hy4_*.py) are
+Copyright 2026 RonanLabs, Apache License 2.0. See README-HY4.md.

@@ -1,0 +1,48 @@
+{
+ "check": {
+  "engine": "vllm",
+  "model": "hy4",
+  "base_is_loopback": true,
+  "prompt_gate": true,
+  "detok_match": true,
+  "tokenize_match": true,
+  "tokenize_server_ids": [
+   29730,
+   18945,
+   25,
+   220,
+   18,
+   13,
+   11994,
+   3710,
+   11,
+   112325,
+   75970,
+   11,
+   220,
+   37248,
+   11,
+   1299,
+   283,
+   2533,
+   3894,
+   326,
+   1315,
+   1142,
+   478,
+   17,
+   220,
+   1439,
+   9279
+  ],
+  "specials_server": {
+   "</think:opensource>": "</think:opensource>",
+   "<think:opensource>": "<think:opensource>",
+   "<\uff5chy_end:opensource\uff5c>": "<\uff5chy_end:opensource\uff5c>",
+   "<\uff5chy_middle:opensource\uff5c>": "<\uff5chy_middle:opensource\uff5c>",
+   "<\uff5chy_start:opensource\uff5c>": "<\uff5chy_start:opensource\uff5c>",
+   "<\uff5creasoning_mode:opensource\uff5c>": "<\uff5creasoning_mode:opensource\uff5c>"
+  },
+  "specials_match": true
+ }
+}

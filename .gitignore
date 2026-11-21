@@ -1,0 +1,3 @@
+harness/data/raw/*.parquet
+harness/data/hy4-fp8-*/
+__pycache__/

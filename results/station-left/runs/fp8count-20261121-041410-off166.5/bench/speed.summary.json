@@ -1,0 +1,35 @@
+{
+ "c1": {
+  "all_gates_ok": true,
+  "cv": null,
+  "mean_tps": 28.168498553801594,
+  "rounds": [
+   {
+    "completion_tokens": 8192,
+    "elapsed": 290.82802534801885,
+    "gates_ok": true,
+    "mean_decode_tps_per_reply": 29.273097589203154,
+    "round": 0,
+    "throughput_tps": 28.168498553801594,
+    "wall_s": 290.8231691219844,
+    "warm": false
+   }
+  ]
+ },
+ "c16": {
+  "all_gates_ok": true,
+  "cv": null,
+  "mean_tps": 98.04054670020544,
+  "rounds": [
+   {
+    "completion_tokens": 8192,
+    "elapsed": 83.55826058099046,
+    "gates_ok": true,
+    "round": 0,
+    "throughput_tps": 98.04054670020544,
+    "wall_s": 83.55726559797768,
+    "warm": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "base_is_loopback": true,
+ "detok_match": true,
+ "engine": "llamacpp",
+ "metrics_head": "# HELP llamacpp:prompt_tokens_total Number of prompt tokens processed, excluding cached tokens\n# TYPE llamacpp:prompt_tokens_total counter\nllamacpp:prompt_tokens_total 273\n# HELP llamacpp:prompt_tokens_cached_total Number of prompt tokens reused from the cache\n# TYPE llamacpp:prompt_tokens_cached_total counter\nllamacpp:prompt_tokens_cached_total 40\n# HELP llamacpp:prompt_seconds_total Total time spent processing prompts\n# TYPE llamacpp:prompt_seconds_total counter\nllamacpp:prompt_seconds_total 1.99975\n# HELP llamacpp:tokens_predicted_total Number of generation tokens processed\n# TYPE llamacpp:tokens_predicted_total counter\nllamacpp:tokens_predicted_total 24\n# HELP llamacpp:tokens_predicted_seconds_total Total time spent generating tokens\n# TYPE llamacpp:tokens_predicted_seconds_total counter\nllamacpp:tokens_predicted_seconds_total 1.19151\n# HELP llamacpp:n_decode_total Total number of llama_decode() calls, excluding speculative decoding and multimodal decoding\n# TYPE llamacpp:n_decode_total counter\nllamacpp:n_decode_total 24\n# HELP llamacpp:n_tokens_max Largest observed sequence length (prompt + generation)\n# TYPE llamacpp:n_tokens_max counter\nllamacpp:n_tokens_max 115\n# HELP llamacpp:spec_decode_num_draft_tokens_total Speculative: Total draft tokens generated\n# TYPE llamacpp:spec_decode_num_draft_tokens_total counter\nllamacpp:spec_decode_num_draft_tokens_total 0\n# HELP llamacpp:spec_decode_num_accepted_tokens_total Speculative: Total draft tokens accepted by the target model\n# TYPE llamacpp:spec_decode_num_accepted_tokens_total counter\nllamacpp:spec_decode_num_accepted_tokens_total 0\n# HELP llamacpp:spec_decode_num_drafts_total Speculative: Total speculative decoding verification steps\n# TYPE llamacpp:spec_decode_num_drafts_total counter\nllamacpp:spec_decode_num_drafts_total 0\n# HELP llamacpp:prompt_tokens_seconds Average prompt throughput in tokens/s\n# TYPE llamacpp:prompt_tokens_seconds gauge\nllamacpp:prompt_tokens_seconds 136.517\n# HELP llamacpp:predicted_tokens",
+ "model": "/models/Hy4-GGUF/Hy4-IQ2.gguf",
+ "prompt_gate": true,
+ "samples": [
+  {
+   "id": "ref-00-gpu-matmul",
+   "prompt_gate": true,
+   "text": "# How a GPU Computes Dense Matrix",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 108,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "total_tokens": 116
+   }
+  },
+  {
+   "id": "ref-01-dijkstra",
+   "prompt_gate": true,
+   "text": "# Dijkstra\u2019s Algorithm in Python",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 102,
+    "prompt_tokens_details": {
+     "cached_tokens": 20
+    },
+    "total_tokens": 110
+   }
+  },
+  {
+   "id": "ref-02-bfs",
+   "prompt_gate": true,
+   "text": "# Breadth-First Search and Depth",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 103,
+    "prompt_tokens_details": {
+     "cached_tokens": 20
+    },
+    "total_tokens": 111
+   }
+  }
+ ],
+ "specials_match": true,
+ "specials_server": {
+  "</think:opensource>": "</think:6124c78e>",
+  "<think:opensource>": "<think:6124c78e>",
+  "<\uff5chy_end:opensource\uff5c>": "<\uff5chy_end:6124c78e\uff5c>",
+  "<\uff5chy_middle:opensource\uff5c>": "<\uff5chy_middle:6124c78e\uff5c>",
+  "<\uff5chy_start:opensource\uff5c>": "<\uff5chy_start:6124c78e\uff5c>",
+  "<\uff5creasoning_mode:opensource\uff5c>": "<\uff5creasoning_mode:6124c78e\uff5c>"
+ },
+ "tokenize_match": true,
+ "tokenize_server_ids": [
+  29730,
+  18945,
+  25,
+  220,
+  18,
+  13,
+  11994,
+  3710,
+  11,
+  112325,
+  75970,
+  11,
+  220,
+  37248,
+  11,
+  1299,
+  283,
+  2533,
+  3894,
+  326,
+  1315,
+  1142,
+  478,
+  17,
+  220,
+  1439,
+  9279
+ ]
+}

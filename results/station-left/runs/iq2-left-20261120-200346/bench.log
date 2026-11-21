@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 522, in <module>
+    decode_tps=((ct-1)/dec if ct and dec else None),
+
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 512, in main
+    m1 = spec_counters(c)
+                ^^^^^^^^^^
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 464, in cmd_logprobs
+    if args.limit:
+                   
+  File "/home/exx/l6-4h/tools/hy4/hy4bench.py", line 138, in topk
+    'eog_retry': eog_retry}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'completion_probabilities'

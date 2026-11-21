@@ -1,0 +1,2 @@
+(Worker_TP0_EP0 pid=769) INFO 11-21 09:11:45 [uva.py:68] Total CPU offloaded parameters: 166.5
+(Worker_TP1_EP1 pid=617) INFO 11-21 09:11:45 [uva.py:68] Total CPU offloaded parameters: 166.5

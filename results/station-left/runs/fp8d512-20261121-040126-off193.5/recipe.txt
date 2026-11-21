@@ -1,0 +1,1 @@
+B: LOGDIR=/home/exx/l6-4h/runs/fp8d512-20261121-040126-off193.5 E3HOOK=0 OFFGB=193.5 CTX=532480 SEQS=4 EXTRA_ARGS='--max-logprobs 64 --enable-prompt-tokens-details'

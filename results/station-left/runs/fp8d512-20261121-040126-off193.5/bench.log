@@ -1,0 +1,40 @@
+{
+ "drafter": {
+  "draft-2k": {
+   "length": 2048,
+   "reps": 3,
+   "gates_ok": true,
+   "ms_per_step_median": 114.8537036804353,
+   "acceptance_median": 0.5083333333333333,
+   "mean_accepted_len_median": 3.5416666666666665,
+   "decode_tps_median": 30.839880986643557
+  },
+  "draft-16k": {
+   "length": 16384,
+   "reps": 3,
+   "gates_ok": true,
+   "ms_per_step_median": 115.05383560075782,
+   "acceptance_median": 0.6125,
+   "mean_accepted_len_median": 4.0625,
+   "decode_tps_median": 34.44450653577888
+  },
+  "draft-128k": {
+   "length": 131072,
+   "reps": 3,
+   "gates_ok": true,
+   "ms_per_step_median": 116.27120571042262,
+   "acceptance_median": 0.5787878787878787,
+   "mean_accepted_len_median": 3.893939393939394,
+   "decode_tps_median": 33.20150001567111
+  },
+  "draft-512k": {
+   "length": 524288,
+   "reps": 3,
+   "gates_ok": true,
+   "ms_per_step_median": 116.36372941346573,
+   "acceptance_median": 0.5818181818181818,
+   "mean_accepted_len_median": 3.909090909090909,
+   "decode_tps_median": 33.2712530282681
+  }
+ }
+}

@@ -1,0 +1,2 @@
+STQ1_0 losses vs FP8: 33 of which STQ1_0 hit cap: 19
+neither capped: n=431 FP8 0.910 STQ1_0 0.898 diff -1.2 pt, discordant 14/9, McNemar exact p=0.405

@@ -1,0 +1,39 @@
+{
+ "argv": [
+  "/home/exx/l6-4h/tools/hy4/hy4bench.py",
+  "all",
+  "--base",
+  "http://127.0.0.1:18080",
+  "--engine",
+  "llamacpp",
+  "--rung",
+  "stq1_0",
+  "--out",
+  "/home/exx/l6-4h/runs/stq1_0-left-20261120-165703/bench",
+  "--think"
+ ],
+ "engine": "llamacpp",
+ "frozen_manifest": {
+  "_inputs": {
+   "ckpt/chat_template.jinja": "11b12531403da5726b7e1f6003f479043b05999e6746d39af949cbcdfd715c35",
+   "ckpt/tokenizer.json": "2e3f3d22065c2be5765ce99ab2410411ae338b32ce809ea20dcdb61d00198e83",
+   "raw/gsm8k-test.parquet": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+   "raw/humaneval-test.parquet": "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6",
+   "raw/mmlu-pro-test.parquet": "0e24a191921c2f453518a537a8b2117bd137e7714d4ef1565e9ba06c1ecb9ad8",
+   "raw/wikitext2-test.parquet": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+   "study-c-reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+  },
+  "gsm8k.json": "748f315264d0f1b22ff48c7efdf10803a0f94d5bb7b8d58fc2cac27332d6391f",
+  "logprob_corpus.json": "168d3dadfe4d4eca4c297053eafd0f07d44721c82b5e19e64cc698b75d1f4923",
+  "mmlu_pro.json": "73efcf6c479ea7bac04b35ba1b9f63f7cb7584271be166d9dc15f8860c02640a",
+  "needle.json": "25871c5e72cf7dcfa0334ac2fb91e583ba9939251232cb3893e03aa765292d15",
+  "prefill.json": "6c1c56958d91e52cfdb0e742753eca77f334a1f8da743a2911442280e49789ba",
+  "speed.json": "983909cd409aa721d7590538652a9bf1738661a134db55d698968d038ffdb17b",
+  "templates.json": "673f60d14d1ba44960ed21cf9538e5e4c9bf799c7481f4699157c56df89b5a71"
+ },
+ "harness_sha256": "a214ba5f780287049dc7f75a290c826b017c27b4580ad49005d304459b5f39d6",
+ "harness_version": "0.1.0",
+ "model": "/models/Hy4-GGUF/Hy4-STQ1_0.gguf",
+ "rung": "stq1_0",
+ "started_unix": 1795222803.9850986
+}

@@ -1,0 +1,3 @@
+trace-calibrated kappa 3.82 {"hit_layers_rank": [20.8495, 20.9695], "hit_layers_any": 35.126, "hit_layers_both": 6.693, "cold_experts_rank_step": [24.8185, 25.014], "per_rank_ms": [3.219134919333859, 3.241073179849445], "crit_ms": 5.4010783551393455, "cold_route_share": 0.13615437158469945}
+as-designed (kappa=1, 3.7% Grace routes) kappa 1.00 {"hit_layers_rank": [6.988, 6.9245], "hit_layers_any": 13.234, "hit_layers_both": 0.6785, "cold_experts_rank_step": [7.3735, 7.3], "per_rank_ms": [1.1208574559692022, 1.1117895007661203], "crit_ms": 1.9611679328609635, "cold_route_share": 0.04009153005464481}
+wrote /mnt/c/AI-Projects/RonanLabs/dsv4pro-sidecar/sim/out/n1n2-results.json

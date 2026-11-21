@@ -1,0 +1,1 @@
+/models/Hy4-GGUF/Hy4-STQ1_0.gguf: OK
