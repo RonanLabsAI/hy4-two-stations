@@ -1,0 +1,12 @@
+{
+ "prefill-32k": {
+  "gates_ok": true,
+  "median_prefill_tps": 2934.390939383059,
+  "reps": 3
+ },
+ "prefill-4k": {
+  "gates_ok": true,
+  "median_prefill_tps": 2715.2674170525393,
+  "reps": 3
+ }
+}

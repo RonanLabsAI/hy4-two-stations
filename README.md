@@ -33,7 +33,9 @@ them there. Order: A-B-B-A over four model loads, 10 paired rounds per cell.
 | Top-1 agreement with FP8 | 93.8% | 93.7% |
 | Extra prediction loss, nats | -0.005 (-0.020, +0.010) | -0.009 (-0.030, +0.011) |
 
-FP8 gave byte-identical log-probabilities on three separate loads, so all of A's drift comes from the sidecar.
+FP8 gave byte-identical log-probabilities on three separate loads. Two loads of the identical sidecar setup differ
+from each other by KL 0.081 and 93.3% top-1 agreement, about as much as either differs from FP8, so the drift is
+mostly run-to-run variation in the sidecar path rather than lost accuracy (found after the run; see below).
 
 ### Compressed GGUF versions vs FP8
 
@@ -51,12 +53,50 @@ Every version found 18 of 18 needles at 32K and 128K.
 Time per verify step, 5 drafted tokens: 114.9 ms at 2K context, 115.1 at 16K, 116.3 at 128K, 116.4 at 512K.
 With the drafter off, plain decode runs at 25.4 tok/s at 1 user, against 27.6 with it on.
 
-### Still running (2026-11-21)
+### Follow-ups (run 2026-11-21 12:50 to 19:41 PT, plan change 8)
 
-1. The sidecar timed on 16 prompts that were not used to choose its experts.
-2. An 8-bit (MXFP8) sidecar.
+**Held-out prompts.** 16 prompts the expert list never saw (8 encyclopedia requests on WikiText-2 titles, 8 HumanEval
+completions), 4-bit sidecar vs FP8, A-B-B-A:
 
-Results are added here when they finish.
+| | FP8 | 4-bit sidecar | A / B (95% CI) | Original prompts |
+|---|---|---|---|---|
+| 1 user, tok/s | 28.5 | 73.4 | 2.58 (2.56-2.59) | 2.51 |
+| 16 users, tok/s | 81.0 | 309.4 | 3.82 (3.78-3.86) | 3.64 |
+
+**8-bit (MXFP8) sidecar.** 2,206 warm experts per Station instead of 4,283. Output check before timing: cosine of at
+least 0.9989 on every layer of both ranks.
+
+| | FP8 | 8-bit sidecar | A / B (95% CI) |
+|---|---|---|---|
+| 1 user, tok/s | 27.8 | 47.9 | 1.72 (1.71-1.74) |
+| 16 users, tok/s | 94.2 | 165.0 | 1.75 (1.73-1.78) |
+| Held-out, 1 user / 16 users | 28.5 / 81.0 | 46.5 / 139.7 | |
+
+| 8-bit sidecar vs FP8 | A8-1 | A8-2 |
+|---|---|---|
+| GSM8K, paired change in points | -0.4 (-1.7, +0.8) | -0.2 (-1.3, +0.8) |
+| MMLU-Pro, paired change in points | +0.6 (-1.5, +2.7) | +1.0 (-1.0, +3.0) |
+| Needles | 18/18 | 18/18 |
+| Mean KL from FP8 | 0.080 (0.061-0.101) | 0.073 (0.057-0.092) |
+| Top-1 agreement | 94.0% | 94.0% |
+| Extra prediction loss, nats | +0.001 (-0.015, +0.017) | +0.009 (-0.010, +0.028) |
+
+**Drift is mostly run-to-run variation** (exploratory, added after seeing results):
+
+| Comparison | Mean KL | Top-1 agreement |
+|---|---|---|
+| FP8 vs FP8 (three loads) | 0 | 100% |
+| 4-bit sidecar vs FP8 | 0.083 | 93.8% |
+| 4-bit sidecar vs itself (two loads) | 0.081 | 93.3% |
+| 8-bit sidecar vs FP8 | 0.080 | 94.0% |
+| 8-bit sidecar vs itself (two loads) | 0.085 | 93.5% |
+
+The 8-bit sidecar's layers match FP8 far more closely than the 4-bit ones (0.999 vs 0.98 cosine), yet both drift the
+same amount, and each drifts from itself as much as from FP8. The cause of the run-to-run variation is not yet known.
+On the plan's two tolerance tiers (change 8), every sidecar load misses the lossless tier on drift; the 8-bit loads
+meet the near-lossless tier except A8-2's prediction-loss bound (+0.028 against +0.020).
+
+No sidecar request timed out in any load.
 
 ## How the plan changed
 

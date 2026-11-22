@@ -1,0 +1,1 @@
+A: LOGDIR=/home/exx/l6-4h/runs/s3b-A8-2-20261121-174538 E3HOOK=1 E3_MODE=serve OFFGB=166.5 CTX=163840 SEQS=16 E3ROWMAP=rowmap-hy4-v1-mxfp8.json EXTRA_ARGS='--max-logprobs 64 --enable-prompt-tokens-details'

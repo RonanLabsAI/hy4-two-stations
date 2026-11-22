@@ -1,0 +1,26 @@
+{
+ "gsm8k:no_think": {
+  "accuracy": 0.97,
+  "cap_hits": 1,
+  "correct": 485,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 500,
+  "wilson95": [
+   0.9510963331640543,
+   0.9817367868020866
+  ]
+ },
+ "mmlu_pro:no_think": {
+  "accuracy": 0.844,
+  "cap_hits": 32,
+  "correct": 422,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 500,
+  "wilson95": [
+   0.809585245166297,
+   0.873169208596155
+  ]
+ }
+}

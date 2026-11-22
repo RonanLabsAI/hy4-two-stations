@@ -140,3 +140,41 @@ for ax, cell, lab in zip(axes, ('c1', 'c16'), ('1 user', '16 users')):
 title(fig, 'Hy4 770B: three GGUF versions vs FP8',
       'GGUF on llama.cpp, one Station each (IQ2 adds the RTX 6000; Q4_K_M adds\nthe 6000 and Grace). All found 18/18 needles; GSM8K within 0.6 pt of FP8.')
 save(fig, 'hy4-gguf-vs-fp8.png')
+
+# ---- 5. sidecar ratios: original prompts, held-out prompts, MXFP8 ------------------------------------------
+fig = plt.figure(figsize=(8, 5))
+ax = fig.add_axes([.30, .14, .64, .58])
+rows5 = [('4-bit, original prompts', 'abba'), ('4-bit, held-out prompts', 'abba-heldout-mxfp4'), ('8-bit, original prompts', 'abba-mxfp8')]
+ys, k = [], 0
+for name, stem in rows5:
+    for cell, lab in (('c1', '1 user'), ('c16', '16 users')):
+        r = js(D/f'analysis/out/{stem}-{cell}.json'); y = 5-k; k += 1
+        col = ORANGE if '8-bit' in name else BLUE
+        ax.barh(y, r['ratio'], height=.6, color=col, alpha=1 if cell == 'c16' else .65)
+        ax.plot(r['ci95'], [y, y], color=INK, lw=1.5)
+        ax.text(r['ci95'][1]+.06, y, f'{r["ratio"]:.2f}x', va='center', fontsize=12.5, color=INK, fontweight='bold')
+        ys.append((y, f'{name}\n{lab}' if cell == 'c1' else lab))
+ax.set_yticks([y for y, _ in ys], [l for _, l in ys], fontsize=10.5)
+ax.axvline(1, color=INK2, lw=1); ax.set_xlim(0, 4.4); ax.grid(axis='y', visible=False)
+ax.set_xlabel('speed vs plain FP8 (10 paired rounds, 95% CI)')
+title(fig, 'Sidecar speedup holds on unseen prompts',
+      'Held-out: 8 encyclopedia + 8 code prompts, none used to pick the experts.\n8-bit experts fit fewer on the card (2,206 vs 4,283 per Station), so less speedup.')
+save(fig, 'hy4-sidecar-heldout-mxfp8.png')
+
+# ---- 6. drift is run-to-run noise --------------------------------------------------------------------------
+fig = plt.figure(figsize=(8, 5))
+ax = fig.add_axes([.34, .16, .6, .54])
+rows6 = [('4-bit sidecar vs FP8', 'drift-A1-vs-B', BLUE), ('4-bit sidecar vs itself\n(two loads)', 'drift-A1-vs-A2-exploratory', GRAY),
+         ('8-bit sidecar vs FP8', 'drift-A8-1-vs-B', ORANGE), ('8-bit sidecar vs itself\n(two loads)', 'drift-A8-1-vs-A8-2-exploratory', GRAY),
+         ('FP8 vs itself\n(three loads)', 'drift-B1-vs-B2', GRAY)]
+for i, (n, f, col) in enumerate(rows6):
+    a = js(D/f'analysis/out/{f}.json')['all']; y = len(rows6)-1-i
+    ax.barh(y, max(a['mean_kl'], 0), height=.6, color=col)
+    if a['mean_kl'] > 1e-6:
+        ax.plot(a['mean_kl_ci95'], [y, y], color=INK, lw=1.5)
+    ax.text(max(a['mean_kl_ci95'][1], 0)+.004, y, f'KL {max(a["mean_kl"], 0):.3f}   top-1 {100*a["top1_agreement"]:.1f}%', va='center', fontsize=11.5, color=INK)
+ax.set_yticks(range(len(rows6))[::-1], [n for n, _, _ in rows6], fontsize=10.5); ax.set_xlim(0, .2); ax.grid(axis='y', visible=False)
+ax.set_xlabel('mean KL between the two, nats, 95% CI')
+title(fig, 'The sidecar is not bit-exact. The variation is noise.',
+      'Two loads of the same sidecar differ from each other as much as from FP8.\nFP8 alone is bit-identical across loads. Benchmarks and prediction loss unchanged.')
+save(fig, 'hy4-drift-is-noise.png')
