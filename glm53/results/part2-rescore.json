@@ -1,0 +1,20 @@
+{
+ "n": 500,
+ "glm_correct": 380,
+ "hy4_correct": 408,
+ "glm_open_cap_counted_at_runtime": 44,
+ "hy4_open_cap_counted_at_runtime": 28,
+ "glm_minus_hy4": -0.056,
+ "glm_minus_hy4_newcombe95": [
+  -0.08989837603428749,
+  -0.0224014869058215
+ ],
+ "discordant_glm_only": 23,
+ "discordant_hy4_only": 51,
+ "mcnemar_exact_p": 0.0015162236642818612,
+ "neither_capped": {
+  "n": 377,
+  "glm": 362,
+  "hy4": 362
+ }
+}

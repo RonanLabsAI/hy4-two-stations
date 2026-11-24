@@ -1,0 +1,116 @@
+{"completion_tokens": 484, "gate": true, "id": "abc483_a", "max_cpu_s": 0.001, "n_tests": 103, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 497, "gate": true, "id": "abc483_a", "max_cpu_s": 0.002, "n_tests": 103, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 589, "gate": true, "id": "abc483_a", "max_cpu_s": 0.002, "n_tests": 103, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 508, "gate": true, "id": "abc483_a", "max_cpu_s": 0.002, "n_tests": 103, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1097, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2276, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3586, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1613, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 15230, "gate": true, "id": "abc483_c", "max_cpu_s": 0.045, "n_tests": 46, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 12927, "gate": true, "id": "abc483_c", "max_cpu_s": 0.057, "n_tests": 46, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 20616, "gate": true, "id": "abc483_c", "max_cpu_s": 0.043, "n_tests": 46, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 32076, "gate": true, "id": "abc483_c", "max_cpu_s": 0.019, "n_tests": 46, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 7503, "gate": true, "id": "abc483_d", "max_cpu_s": 0.012, "n_tests": 48, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 8740, "gate": true, "id": "abc483_d", "max_cpu_s": 0.011, "n_tests": 48, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 5345, "gate": true, "id": "abc483_d", "max_cpu_s": 0.01, "n_tests": 48, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 7484, "gate": true, "id": "abc483_d", "max_cpu_s": 0.009, "n_tests": 48, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 27773, "gate": true, "id": "abc483_e", "max_cpu_s": 0.227, "n_tests": 41, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 29452, "gate": true, "id": "abc483_e", "max_cpu_s": 0.194, "n_tests": 41, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_e", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_e", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_f", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_f", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_f", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_f", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_g", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_g", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_g", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc483_g", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 436, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 976, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 521, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 520, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1792, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 695, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 706, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 555, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 15863, "gate": true, "id": "abc484_c", "max_cpu_s": 0.012, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_c", "passed": false, "seed": 2, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_c", "passed": false, "seed": 3, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_c", "passed": false, "seed": 4, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_d", "passed": false, "seed": 1, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_d", "passed": false, "seed": 2, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_d", "passed": false, "seed": 3, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_d", "passed": false, "seed": 4, "tier": "abc-ad", "verdict": "cap_hit"}
+{"completion_tokens": 9254, "gate": true, "id": "abc484_e", "max_cpu_s": 0.107, "n_tests": 44, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 25087, "gate": true, "id": "abc484_e", "max_cpu_s": 0.081, "n_tests": 44, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 7937, "gate": true, "id": "abc484_e", "max_cpu_s": 0.078, "n_tests": 44, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 27248, "gate": true, "id": "abc484_e", "max_cpu_s": 0.084, "n_tests": 44, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 14991, "gate": true, "id": "abc484_f", "max_cpu_s": 0.071, "n_tests": 42, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 31573, "gate": true, "id": "abc484_f", "max_cpu_s": 0.039, "n_tests": 42, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 20465, "gate": true, "id": "abc484_f", "max_cpu_s": 0.051, "n_tests": 42, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 32079, "gate": true, "id": "abc484_f", "max_cpu_s": 0.123, "n_tests": 42, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_g", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_g", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_g", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc484_g", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 543, "gate": true, "id": "abc485_a", "max_cpu_s": 0.001, "n_tests": 63, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 674, "gate": true, "id": "abc485_a", "max_cpu_s": 0.001, "n_tests": 63, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 618, "gate": true, "id": "abc485_a", "max_cpu_s": 0.001, "n_tests": 63, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 612, "gate": true, "id": "abc485_a", "max_cpu_s": 0.002, "n_tests": 63, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3761, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2916, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3074, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2239, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 4711, "gate": true, "id": "abc485_c", "max_cpu_s": 0.012, "n_tests": 52, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 5207, "gate": true, "id": "abc485_c", "max_cpu_s": 0.011, "n_tests": 52, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3678, "gate": true, "id": "abc485_c", "max_cpu_s": 0.013, "n_tests": 52, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 10402, "gate": true, "id": "abc485_c", "max_cpu_s": 0.011, "n_tests": 52, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 14880, "gate": true, "id": "abc485_d", "max_cpu_s": 0.003, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 13855, "gate": true, "id": "abc485_d", "max_cpu_s": 0.002, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 11094, "gate": true, "id": "abc485_d", "max_cpu_s": 0.002, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 24089, "gate": true, "id": "abc485_d", "max_cpu_s": 0.004, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_e", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_e", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_e", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_e", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_f", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_f", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_f", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_f", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_g", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_g", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_g", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "abc485_g", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_a", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_a", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_a", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_a", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_b", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_b", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_b", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_b", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_c", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_c", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_c", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_c", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_d", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_d", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_d", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "agc079_d", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_a", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_a", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_a", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_a", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_b", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_b", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_b", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_b", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_c", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_c", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_c", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_c", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_d", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_d", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_d", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 32768, "gate": true, "id": "arc234_d", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}

@@ -1,0 +1,20 @@
+{
+ "cap": 32768,
+ "cap_hits": 65,
+ "errors": 0,
+ "gate_failures": 0,
+ "mean_completion_tokens": 22420.405172413793,
+ "n": 116,
+ "profile": "glm53",
+ "sampling": {
+  "temperature": 1.0,
+  "top_p": 0.95
+ },
+ "seeds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "tasks": 29
+}

@@ -1,0 +1,44 @@
+{
+ "argv": [
+  "/home/exx/l6-4g/tools/hy4/hy4bench.py",
+  "quality",
+  "--base",
+  "http://127.0.0.1:8020",
+  "--engine",
+  "sglang",
+  "--model",
+  "glm-5.3",
+  "--rung",
+  "gn",
+  "--frozen",
+  "frozen-glm53",
+  "--out",
+  "/home/exx/l6-4g/runs/gn-20261122-114911/bench"
+ ],
+ "engine": "sglang",
+ "frozen_manifest": {
+  "_inputs": {
+   "ckpt/chat_template.jinja": "0e2b6268ac54f04d2bc1157e8cfb896cb66f25c0b5e319ea12e56014c3914f24",
+   "ckpt/tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+   "raw/gsm8k-test.parquet": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+   "raw/humaneval-test.parquet": "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6",
+   "raw/mmlu-pro-test.parquet": "0e24a191921c2f453518a537a8b2117bd137e7714d4ef1565e9ba06c1ecb9ad8",
+   "raw/wikitext2-test.parquet": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+   "study-c-reference-corpus.json": "edb21df93c0ce6971c5466addb85c8a7022a889f76e727526a49124a9eefc5bd"
+  },
+  "drafter.json": "43ee8f73599c9d3da7fa19c21e4113c66f18d03009556675502ed4c5719af37f",
+  "gsm8k.json": "32a9089b0280adc4aa3e09c1964468d2e00e7a1c1bcd06b17d1264a74e2bcbbe",
+  "logprob_corpus.json": "1bd2f68213c744bee57c7e765b32aeac1f3c1ca6d92e13ac0ae7d277278d76ad",
+  "mmlu_pro.json": "7927a45c997d2e84a47ce4dcffbe91f662adb05a58b5bd958acbb08a7e973de6",
+  "needle.json": "25a5807fcb407262ce4b3adc024f83d495a68908c707d3b3c18a5644a44a26ed",
+  "prefill.json": "72f6ac50496ba9c0aaf99a39a0a509cd4fa519d77fc94e4b5a01c685e51da4f5",
+  "speed.json": "e48fda7121af1e56a051d112f5ccaba89d7b6ed2437742424e1e3ab82ffe6c5b",
+  "speed_heldout.json": "e8692f070262f0966a57b2b48378517f5f2cf72064fe746ad120b09334747128",
+  "templates.json": "39d68db8609e7529170cd20775c42cab51da499ccad8cc14d98e8fe5f08890d7"
+ },
+ "harness_sha256": "649a65e16c5280f6882716f91d4064dd2bf16b8bfc71f208ab2aecfa8c4885a8",
+ "harness_version": "0.1.0",
+ "model": "glm-5.3",
+ "rung": "gn",
+ "started_unix": 1795378838.9335878
+}

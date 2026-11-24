@@ -11,6 +11,8 @@ CPU memory. The two Stations are joined by a direct network cable.
   with 166.5 GiB of experts in Grace memory and Hy4's built-in drafter at 5 tokens per step.
 - The GGUF versions run on a llama.cpp fork at `f8d4cc414` with the STQ1_0 patch, one Station each.
 
+**Follow-on study:** GLM-5.3 vs Hy4 on the same Stations (L6-4g): speed, MMLU-Pro with thinking on, and fresh AtCoder coding. See [`glm53/`](glm53/).
+
 ## Results
 
 ### RTX PRO 6000 expert sidecar (A) vs plain FP8 (B)

@@ -1,0 +1,88 @@
+{
+ "base_is_loopback": true,
+ "detok_match": true,
+ "engine": "sglang",
+ "metrics_head": "# HELP sglang:process_cpu_seconds_total Total CPU time consumed by this process (user + system)\n# TYPE sglang:process_cpu_seconds_total counter\nsglang:process_cpu_seconds_total{component=\"tokenizer\"} 0.46999999999999975\nsglang:process_cpu_seconds_total{component=\"detokenizer\"} 0.03999999999999937\n# HELP sglang:http_requests_total Total number of HTTP requests by endpoint and method\n# TYPE sglang:http_requests_total counter\nsglang:http_requests_total{endpoint=\"/model_info\",method=\"GET\"} 1.0\nsglang:http_requests_total{endpoint=\"/generate\",method=\"POST\"} 1.0\nsglang:http_requests_total{endpoint=\"/v1/models\",method=\"GET\"} 1.0\nsglang:http_requests_total{endpoint=\"/v1/completions\",method=\"POST\"} 3.0\nsglang:http_requests_total{endpoint=\"/freeze_gc\",method=\"POST\"} 1.0\nsglang:http_requests_total{endpoint=\"/detokenize\",method=\"POST\"} 8.0\nsglang:http_requests_total{endpoint=\"/tokenize\",method=\"POST\"} 8.0\nsglang:http_requests_total{endpoint=\"/metrics\",method=\"GET\"} 1.0\n# HELP sglang:http_responses_total Total number of HTTP responses by endpoint and status code\n# TYPE sglang:http_responses_total counter\nsglang:http_responses_total{endpoint=\"/model_info\",method=\"GET\",status_code=\"200\"} 1.0\nsglang:http_responses_total{endpoint=\"/v1/models\",method=\"GET\",status_code=\"200\"} 1.0\nsglang:http_responses_total{endpoint=\"/generate\",method=\"POST\",status_code=\"200\"} 1.0\nsglang:http_responses_total{endpoint=\"/v1/completions\",method=\"POST\",status_code=\"200\"} 3.0\nsglang:http_responses_total{endpoint=\"/freeze_gc\",method=\"POST\",status_code=\"200\"} 1.0\nsglang:http_responses_total{endpoint=\"/detokenize\",method=\"POST\",status_code=\"200\"} 8.0\nsglang:http_responses_total{endpoint=\"/tokenize\",method=\"POST\",status_code=\"200\"} 8.0\n# HELP sglang:prompt_tokens_total Number of prefill tokens processed.\n# TYPE sglang:prompt_tokens_total counter\nsglang:prompt_tokens_total{engine_type=\"unified\",is_streaming=\"false\",model_name=\"glm-5.3\"} 285.0\n# HELP sglang:generation_tokens_total Number of generation tokens proc",
+ "model": "glm-5.3",
+ "prompt_gate": true,
+ "samples": [
+  {
+   "id": "ref-00-gpu-matmul",
+   "prompt_gate": true,
+   "text": "# How a GPU Computes Dense Matrix Multip",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 97,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0,
+    "total_tokens": 105
+   }
+  },
+  {
+   "id": "ref-01-dijkstra",
+   "prompt_gate": true,
+   "text": "# Dijkstra's Shortest Path Algorithm",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 90,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0,
+    "total_tokens": 98
+   }
+  },
+  {
+   "id": "ref-02-bfs",
+   "prompt_gate": true,
+   "text": "# Breadth-First Search and Depth",
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 92,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0,
+    "total_tokens": 100
+   }
+  }
+ ],
+ "specials_match": true,
+ "specials_server": {
+  "</think>": "</think>",
+  "<sop>": "<sop>",
+  "<think>": "<think>",
+  "<|assistant|>": "<|assistant|>",
+  "<|system|>": "<|system|>",
+  "<|user|>": "<|user|>",
+  "[gMASK]": "[gMASK]"
+ },
+ "tokenize_match": true,
+ "tokenize_server_ids": [
+  7033,
+  21678,
+  25,
+  220,
+  18,
+  13,
+  122804,
+  102573,
+  11,
+  94083,
+  586,
+  51609,
+  11,
+  60173,
+  109,
+  98971,
+  11,
+  707,
+  282,
+  2075,
+  982,
+  262,
+  470,
+  856,
+  334,
+  17,
+  220,
+  671,
+  5394
+ ]
+}

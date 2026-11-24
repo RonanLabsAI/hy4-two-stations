@@ -1,0 +1,97 @@
+{
+ "base_is_loopback": true,
+ "detok_match": true,
+ "engine": "vllm",
+ "metrics_head": "# HELP python_gc_objects_collected_total Objects collected during gc\n# TYPE python_gc_objects_collected_total counter\npython_gc_objects_collected_total{generation=\"0\"} 20570.0\npython_gc_objects_collected_total{generation=\"1\"} 3114.0\npython_gc_objects_collected_total{generation=\"2\"} 1818.0\n# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC\n# TYPE python_gc_objects_uncollectable_total counter\npython_gc_objects_uncollectable_total{generation=\"0\"} 0.0\npython_gc_objects_uncollectable_total{generation=\"1\"} 0.0\npython_gc_objects_uncollectable_total{generation=\"2\"} 0.0\n# HELP python_gc_collections_total Number of times this generation was collected\n# TYPE python_gc_collections_total counter\npython_gc_collections_total{generation=\"0\"} 2238.0\npython_gc_collections_total{generation=\"1\"} 202.0\npython_gc_collections_total{generation=\"2\"} 12.0\n# HELP python_info Python platform information\n# TYPE python_info gauge\npython_info{implementation=\"CPython\",major=\"3\",minor=\"12\",patchlevel=\"3\",version=\"3.12.3\"} 1.0\n# HELP process_virtual_memory_bytes Virtual memory size in bytes.\n# TYPE process_virtual_memory_bytes gauge\nprocess_virtual_memory_bytes 3.9188430848e+10\n# HELP process_resident_memory_bytes Resident memory size in bytes.\n# TYPE process_resident_memory_bytes gauge\nprocess_resident_memory_bytes 1.37003008e+09\n# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.\n# TYPE process_start_time_seconds gauge\nprocess_start_time_seconds 1.79539529234e+09\n# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.\n# TYPE process_cpu_seconds_total counter\nprocess_cpu_seconds_total 21.33\n# HELP process_open_fds Number of open file descriptors.\n# TYPE process_open_fds gauge\nprocess_open_fds 68.0\n# HELP process_max_fds Maximum number of open file descriptors.\n# TYPE process_max_fds gauge\nprocess_max_fds 65535.0\n# HELP vllm:spec_decode_num_drafts_total Number of spec decoding drafts.\n# TYPE vllm:spec_deco",
+ "model": "hy4",
+ "prompt_gate": true,
+ "samples": [
+  {
+   "id": "ref-00-gpu-matmul",
+   "prompt_gate": true,
+   "text": "Below is a detailed, end-to-end",
+   "usage": {
+    "completion_tokens": 8,
+    "completion_tokens_details": null,
+    "prompt_tokens": 108,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "created_cache_tokens": null,
+     "multimodal_tokens": null
+    },
+    "total_tokens": 116
+   }
+  },
+  {
+   "id": "ref-01-dijkstra",
+   "prompt_gate": true,
+   "text": "# Complete Tutorial: Dijkstra\u2019s",
+   "usage": {
+    "completion_tokens": 8,
+    "completion_tokens_details": null,
+    "prompt_tokens": 102,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "created_cache_tokens": null,
+     "multimodal_tokens": null
+    },
+    "total_tokens": 110
+   }
+  },
+  {
+   "id": "ref-02-bfs",
+   "prompt_gate": true,
+   "text": "# Breadth-First Search and Depth",
+   "usage": {
+    "completion_tokens": 8,
+    "completion_tokens_details": null,
+    "prompt_tokens": 103,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "created_cache_tokens": null,
+     "multimodal_tokens": null
+    },
+    "total_tokens": 111
+   }
+  }
+ ],
+ "specials_match": true,
+ "specials_server": {
+  "</think:opensource>": "</think:opensource>",
+  "<think:opensource>": "<think:opensource>",
+  "<\uff5chy_end:opensource\uff5c>": "<\uff5chy_end:opensource\uff5c>",
+  "<\uff5chy_middle:opensource\uff5c>": "<\uff5chy_middle:opensource\uff5c>",
+  "<\uff5chy_start:opensource\uff5c>": "<\uff5chy_start:opensource\uff5c>",
+  "<\uff5creasoning_mode:opensource\uff5c>": "<\uff5creasoning_mode:opensource\uff5c>"
+ },
+ "tokenize_match": true,
+ "tokenize_server_ids": [
+  29730,
+  18945,
+  25,
+  220,
+  18,
+  13,
+  11994,
+  3710,
+  11,
+  112325,
+  75970,
+  11,
+  220,
+  37248,
+  11,
+  1299,
+  283,
+  2533,
+  3894,
+  326,
+  1315,
+  1142,
+  478,
+  17,
+  220,
+  1439,
+  9279
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "cap": 65536,
+ "cap_hits": 32,
+ "errors": 0,
+ "gate_failures": 0,
+ "mean_completion_tokens": 31411.379310344826,
+ "n": 116,
+ "profile": "hy4",
+ "sampling": {
+  "temperature": 0.9,
+  "top_p": 1.0
+ },
+ "seeds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "tasks": 29
+}

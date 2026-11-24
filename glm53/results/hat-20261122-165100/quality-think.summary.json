@@ -1,0 +1,14 @@
+{
+ "mmlu_pro:think": {
+  "accuracy": 0.872,
+  "cap_hits": 64,
+  "correct": 436,
+  "empty": 0,
+  "gate_failures": 0,
+  "n": 500,
+  "wilson95": [
+   0.8398543146918417,
+   0.8984731760047635
+  ]
+ }
+}

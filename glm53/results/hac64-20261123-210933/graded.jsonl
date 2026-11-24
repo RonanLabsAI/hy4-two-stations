@@ -1,0 +1,116 @@
+{"completion_tokens": 384, "gate": true, "id": "abc483_a", "max_cpu_s": 0.001, "n_tests": 103, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 309, "gate": true, "id": "abc483_a", "max_cpu_s": 0.002, "n_tests": 103, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 330, "gate": true, "id": "abc483_a", "max_cpu_s": 0.002, "n_tests": 103, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 381, "gate": true, "id": "abc483_a", "max_cpu_s": 0.001, "n_tests": 103, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1334, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1258, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 944, "gate": true, "id": "abc483_b", "max_cpu_s": 0.002, "n_tests": 56, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 1440, "gate": true, "id": "abc483_b", "max_cpu_s": 0.001, "n_tests": 56, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 24634, "gate": true, "id": "abc483_c", "max_cpu_s": 0.052, "n_tests": 46, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 20991, "gate": true, "id": "abc483_c", "max_cpu_s": 0.064, "n_tests": 46, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 13341, "gate": true, "id": "abc483_c", "max_cpu_s": 0.178, "n_tests": 46, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 23142, "gate": true, "id": "abc483_c", "max_cpu_s": 0.049, "n_tests": 46, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 7974, "gate": true, "id": "abc483_d", "max_cpu_s": 0.011, "n_tests": 48, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 6936, "gate": true, "id": "abc483_d", "max_cpu_s": 0.01, "n_tests": 48, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 8645, "gate": true, "id": "abc483_d", "max_cpu_s": 0.009, "n_tests": 48, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 6868, "gate": true, "id": "abc483_d", "max_cpu_s": 0.009, "n_tests": 48, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 19278, "gate": true, "id": "abc483_e", "max_cpu_s": 0.227, "n_tests": 41, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 14494, "gate": true, "id": "abc483_e", "max_cpu_s": 0.218, "n_tests": 41, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 33633, "gate": true, "id": "abc483_e", "max_cpu_s": 0.431, "n_tests": 41, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 12208, "gate": true, "id": "abc483_e", "max_cpu_s": 0.21, "n_tests": 41, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "abc483_f", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc483_f", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc483_f", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 64101, "gate": true, "id": "abc483_f", "max_cpu_s": 0.273, "n_tests": 39, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 20753, "gate": true, "id": "abc483_g", "max_cpu_s": 0.018, "n_tests": 38, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 24297, "gate": true, "id": "abc483_g", "max_cpu_s": 0.015, "n_tests": 38, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 24667, "gate": true, "id": "abc483_g", "max_cpu_s": 0.025, "n_tests": 38, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 19886, "gate": true, "id": "abc483_g", "max_cpu_s": 0.016, "n_tests": 38, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 556, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 447, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 446, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 739, "gate": true, "id": "abc484_a", "max_cpu_s": 0.001, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 451, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 521, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 658, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 699, "gate": true, "id": "abc484_b", "max_cpu_s": 0.001, "n_tests": 58, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 28292, "gate": true, "id": "abc484_c", "max_cpu_s": 0.014, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 21544, "gate": true, "id": "abc484_c", "max_cpu_s": 0.011, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 24410, "gate": true, "id": "abc484_c", "max_cpu_s": 0.011, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 16544, "gate": true, "id": "abc484_c", "max_cpu_s": 0.012, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 28916, "gate": true, "id": "abc484_d", "max_cpu_s": 0.007, "n_tests": 46, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 16944, "gate": true, "id": "abc484_d", "max_cpu_s": 0.006, "n_tests": 46, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 23864, "gate": true, "id": "abc484_d", "max_cpu_s": 0.006, "n_tests": 46, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 23725, "gate": true, "id": "abc484_d", "max_cpu_s": 0.007, "n_tests": 46, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 6122, "gate": true, "id": "abc484_e", "max_cpu_s": 0.082, "n_tests": 44, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 6789, "gate": true, "id": "abc484_e", "max_cpu_s": 0.075, "n_tests": 44, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 6124, "gate": true, "id": "abc484_e", "max_cpu_s": 0.074, "n_tests": 44, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 4670, "gate": true, "id": "abc484_e", "max_cpu_s": 0.075, "n_tests": 44, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 9762, "gate": true, "id": "abc484_f", "max_cpu_s": 0.066, "n_tests": 42, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 5555, "gate": true, "id": "abc484_f", "max_cpu_s": 0.057, "n_tests": 42, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 7776, "detail": "      \u2018Node identity()\u2019\n   11 | Node identity() {\n      |      ^~~~~~~~\n/tmp/p3g-b7nu7vhs/main.cpp:69:26: error: reference to \u2018identity\u2019 is ambiguous\n   69 |             Node right = identity();\n      |                          ^~~~~~~~\n/usr/include/c++/13/bits/ranges_cmp.h:47:10: note: candidates are: \u2018struct std::identity\u2019\n   47 |   struct identity\n      |          ^~~~~~~~\n/tmp/p3g-b7nu7vhs/main.cpp:11:6: note:                 \u2018Node identity()\u2019\n   11 | Node identity() {\n      |      ^~~~~~~~\n", "gate": true, "id": "abc484_f", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "compile_error"}
+{"completion_tokens": 4897, "gate": true, "id": "abc484_f", "max_cpu_s": 0.064, "n_tests": 42, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "abc484_g", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 57547, "gate": true, "id": "abc484_g", "max_cpu_s": 0.002, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 38317, "gate": true, "id": "abc484_g", "max_cpu_s": 0.002, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 39291, "gate": true, "id": "abc484_g", "max_cpu_s": 0.006, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 368, "gate": true, "id": "abc485_a", "max_cpu_s": 0.002, "n_tests": 63, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 538, "gate": true, "id": "abc485_a", "max_cpu_s": 0.001, "n_tests": 63, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 474, "gate": true, "id": "abc485_a", "max_cpu_s": 0.001, "n_tests": 63, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 548, "gate": true, "id": "abc485_a", "max_cpu_s": 0.002, "n_tests": 63, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2764, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3326, "gate": true, "id": "abc485_b", "max_cpu_s": 0.002, "n_tests": 59, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 7189, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3086, "gate": true, "id": "abc485_b", "max_cpu_s": 0.001, "n_tests": 59, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2283, "gate": true, "id": "abc485_c", "max_cpu_s": 0.017, "n_tests": 52, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 7455, "gate": true, "id": "abc485_c", "max_cpu_s": 0.014, "n_tests": 52, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 3464, "gate": true, "id": "abc485_c", "max_cpu_s": 0.014, "n_tests": 52, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 2687, "gate": true, "id": "abc485_c", "max_cpu_s": 0.013, "n_tests": 52, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 10981, "gate": true, "id": "abc485_d", "max_cpu_s": 0.005, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 8471, "gate": true, "id": "abc485_d", "max_cpu_s": 0.004, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 26033, "gate": true, "id": "abc485_d", "max_cpu_s": 0.003, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 14932, "gate": true, "id": "abc485_d", "max_cpu_s": 0.003, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-ad", "verdict": "AC"}
+{"completion_tokens": 40955, "gate": true, "id": "abc485_e", "max_cpu_s": 0.179, "n_tests": 53, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 37526, "gate": true, "id": "abc485_e", "max_cpu_s": 0.139, "n_tests": 53, "passed": true, "seed": 2, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 47003, "gate": true, "id": "abc485_e", "max_cpu_s": 0.303, "n_tests": 53, "passed": true, "seed": 3, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 19418, "gate": true, "id": "abc485_e", "max_cpu_s": 0.091, "n_tests": 53, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 58311, "gate": true, "id": "abc485_f", "max_cpu_s": 0.071, "n_tests": 48, "passed": true, "seed": 1, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_f", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_f", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 54572, "gate": true, "id": "abc485_f", "max_cpu_s": 0.051, "n_tests": 48, "passed": true, "seed": 4, "tier": "abc-eg", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_g", "passed": false, "seed": 1, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_g", "passed": false, "seed": 2, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_g", "passed": false, "seed": 3, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "abc485_g", "passed": false, "seed": 4, "tier": "abc-eg", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_a", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_a", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_a", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_a", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_b", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_b", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_b", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_b", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_c", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_c", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_c", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_c", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_d", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_d", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_d", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "agc079_d", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 44292, "gate": true, "id": "arc234_a", "max_cpu_s": 0.032, "n_tests": 45, "passed": true, "seed": 1, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 48320, "gate": true, "id": "arc234_a", "max_cpu_s": 0.028, "n_tests": 45, "passed": true, "seed": 2, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 37859, "gate": true, "id": "arc234_a", "max_cpu_s": 0.026, "n_tests": 45, "passed": true, "seed": 3, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 39928, "gate": true, "id": "arc234_a", "max_cpu_s": 0.025, "n_tests": 45, "passed": true, "seed": 4, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 45385, "gate": true, "id": "arc234_b", "max_cpu_s": 0.065, "n_tests": 50, "passed": true, "seed": 1, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 53149, "gate": true, "id": "arc234_b", "max_cpu_s": 0.095, "n_tests": 50, "passed": true, "seed": 2, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 48978, "gate": true, "id": "arc234_b", "max_cpu_s": 0.068, "n_tests": 50, "passed": true, "seed": 3, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 52330, "gate": true, "id": "arc234_b", "max_cpu_s": 0.091, "n_tests": 50, "passed": true, "seed": 4, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 33263, "gate": true, "id": "arc234_c", "max_cpu_s": 0.002, "n_tests": 30, "passed": true, "seed": 1, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_c", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_c", "passed": false, "seed": 3, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_c", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_d", "passed": false, "seed": 1, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_d", "passed": false, "seed": 2, "tier": "arc-agc", "verdict": "cap_hit"}
+{"completion_tokens": 62846, "gate": true, "id": "arc234_d", "max_cpu_s": 0.025, "n_tests": 48, "passed": true, "seed": 3, "tier": "arc-agc", "verdict": "AC"}
+{"completion_tokens": 65536, "gate": true, "id": "arc234_d", "passed": false, "seed": 4, "tier": "arc-agc", "verdict": "cap_hit"}

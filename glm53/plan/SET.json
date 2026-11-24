@@ -1,0 +1,336 @@
+{
+ "rule": "rated ABC/ARC/AGC contests starting after 2026-11-04 23:59 PT, ended >= 72 h before freeze; AHC and interactive tasks excluded (Amendment 2)",
+ "contests": [
+  "abc483",
+  "abc484",
+  "abc485",
+  "agc079",
+  "arc234"
+ ],
+ "tasks": [
+  {
+   "task_id": "abc483_a",
+   "contest": "abc483",
+   "tier": "abc-ad",
+   "title": "A - Double-Sided Printing",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "53ec02dd3bcaed72892d3449a1593df056952f125e8b264a5e3e3fb41d154376",
+   "build_sha256": "6d9e1fb9bc499b1d4182bc3938cbc86078ca7e5cd521b41089c7b591af6d2af6",
+   "n_tests": 206
+  },
+  {
+   "task_id": "abc483_b",
+   "contest": "abc483",
+   "tier": "abc-ad",
+   "title": "B - Flip Card Stack",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "13e7dc62d530b711612e8968bd341621501bdde5aea56124b3be96db5a3976e7",
+   "build_sha256": "d545ed7aeed95ff636d676d6073e11c65ecc85107d7c54dc688fda9f4c4460c6",
+   "n_tests": 112
+  },
+  {
+   "task_id": "abc483_c",
+   "contest": "abc483",
+   "tier": "abc-ad",
+   "title": "C - Second Choice Election",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "aa4fa043413e2557d77038476dd09a5c35b623ea28bff3e42d6b622601c9a6b0",
+   "build_sha256": "95ab46c0ff01b7f8551913a33ea88d62bdb0340eaa248bc76cfd64abfe58744c",
+   "n_tests": 92
+  },
+  {
+   "task_id": "abc483_d",
+   "contest": "abc483",
+   "tier": "abc-ad",
+   "title": "D - Glitchy Robot",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "e6f4e2adda461d0449cf413c76376a749bfe6ab2cff9b8467574aeca0468712b",
+   "build_sha256": "96a2a3788192fd5f4385fcbb042fdebe1d54ad2fe41f99521b98947e0e4513a8",
+   "n_tests": 96
+  },
+  {
+   "task_id": "abc483_e",
+   "contest": "abc483",
+   "tier": "abc-eg",
+   "title": "E - Typo Pairs",
+   "time_limit_s": 4.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "a89ab89aef9e3579b8ccff8e75d74405177b44889fd932f9ed0ee20753d47c65",
+   "build_sha256": "e4532c96f435ba242d9a1fad3fe64e724a9e3c351d051a4f598819b82f80dbad",
+   "n_tests": 82
+  },
+  {
+   "task_id": "abc483_f",
+   "contest": "abc483",
+   "tier": "abc-eg",
+   "title": "F - Sum of Mod of Linear",
+   "time_limit_s": 2.5,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "938ebecb2b814de0fa213908323a5f1e768bc1ea460982b982c81215c30d9e88",
+   "build_sha256": "2aaf4d8fb50ed88961f1640b8fc92651cae8cd6de32d864cffc3bbd216a41d37",
+   "n_tests": 78
+  },
+  {
+   "task_id": "abc483_g",
+   "contest": "abc483",
+   "tier": "abc-eg",
+   "title": "G - Qualification",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c8c13b4ed18dacd1868eafcbf676893576057665610f1a3e63c9151971512dc1",
+   "build_sha256": "81df1a6bcdd4e3e06368141c10768262ded0f638482c1dab98991dc23afd4411",
+   "n_tests": 76
+  },
+  {
+   "task_id": "abc484_a",
+   "contest": "abc484",
+   "tier": "abc-ad",
+   "title": "A - Chocolate Bar Count",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "f53bc61eb56519594780c8c4b17d6eb3b085fa6b3369d5457c4e3061f6b6121f",
+   "build_sha256": "dc634a872fc1f812750247887654adb5ee539e783f076e5e43213f07e445fb75",
+   "n_tests": 106
+  },
+  {
+   "task_id": "abc484_b",
+   "contest": "abc484",
+   "tier": "abc-ad",
+   "title": "B - Nineball",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "bc2124d50bd599ad25aff1aeab1df78f195949315749ce0db2a8660d373ac477",
+   "build_sha256": "d73ba68c5cf102e8b7b66af4c80d042a869274f248d50e799e3b369238ea0a54",
+   "n_tests": 116
+  },
+  {
+   "task_id": "abc484_c",
+   "contest": "abc484",
+   "tier": "abc-ad",
+   "title": "C - Move One Card",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "ceac4be07e3ea2861cd3f52779bd80032aec0c4f34a1eaaf51b1caa420b81208",
+   "build_sha256": "c75c96713e0c18c7088c6fb294a9f913b97e4e2ef69b4d8771f172a55f637063",
+   "n_tests": 106
+  },
+  {
+   "task_id": "abc484_d",
+   "contest": "abc484",
+   "tier": "abc-ad",
+   "title": "D - Move One Card Left",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "047386b3c2d1c855252f750aa9df2c8b369b71eb24123106f14159c2dd9bcd4c",
+   "build_sha256": "702e6aa02319be481d5d33e281edb4da0c79d6a0213f930f3fff4b425a15e690",
+   "n_tests": 92
+  },
+  {
+   "task_id": "abc484_e",
+   "contest": "abc484",
+   "tier": "abc-eg",
+   "title": "E - Subsegment Sum Finder",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c66ac78fe1a786bdd01d03d1a97b5696525799743650524b3286420597725735",
+   "build_sha256": "f191ccdb3489c5533dcfd811df11e79b1754a0fc0549e708f948353ddffa2bc1",
+   "n_tests": 88
+  },
+  {
+   "task_id": "abc484_f",
+   "contest": "abc484",
+   "tier": "abc-eg",
+   "title": "F - Make them monochrome",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "52b4cdfd83be7e1ab13f7f16a9f2c590a9f14d3765ae31799e9012748df46ac6",
+   "build_sha256": "abdc1fd742251dfb3eaebf9443bb00ee3e686558e0581c4fa2391b5345c160a7",
+   "n_tests": 84
+  },
+  {
+   "task_id": "abc484_g",
+   "contest": "abc484",
+   "tier": "abc-eg",
+   "title": "G - Wildcard Construction",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "569c14e6b1ab49a0ec7bbf65ce80a96bb14de601e3ce703a21c3172ac97f7d06",
+   "build_sha256": "77830ca7802025be619b2ef04b7c3d137b51cef52ac91b77a26625e8cd779ea6",
+   "n_tests": 106
+  },
+  {
+   "task_id": "abc485_a",
+   "contest": "abc485",
+   "tier": "abc-ad",
+   "title": "A - Same Side",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "f51b9606b2a1f08fa968f08a0aee157cf5df714f5dfabc87b76b9a7f4de55ea1",
+   "build_sha256": "3ee74b0860cf82ef1121047f5b1c8ed82ca8b504c2dba151bc9704dfccc9621b",
+   "n_tests": 126
+  },
+  {
+   "task_id": "abc485_b",
+   "contest": "abc485",
+   "tier": "abc-ad",
+   "title": "B - Faucets and Drains",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c5d2d6dc75255e2671a728f6cdaf3716245a8d06480fbb43a6d9326570e38238",
+   "build_sha256": "5b66400326f6f465f50455706d178ab4d7b19a922f28d6e025c89b04b3a9f17f",
+   "n_tests": 118
+  },
+  {
+   "task_id": "abc485_c",
+   "contest": "abc485",
+   "tier": "abc-ad",
+   "title": "C - Different Neighbor",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "daaa5326a8171335ca82586256482813bed3871cd6ec7330910f33ebc22b8053",
+   "build_sha256": "8d17576da75fca7a315fa8cd7df2896a0eea34a9fccae14270e0668cb7fbea94",
+   "n_tests": 104
+  },
+  {
+   "task_id": "abc485_d",
+   "contest": "abc485",
+   "tier": "abc-ad",
+   "title": "D - ABC|ABC|ABC",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "b53963da82e6fbee98d78ccd0c8609eff970c2ba5605ce73a668bbb4b59fdbf5",
+   "build_sha256": "efbd5c319c0611a57cf09f6d393e519af37238a863031379a4e0077aab9753bb",
+   "n_tests": 106
+  },
+  {
+   "task_id": "abc485_e",
+   "contest": "abc485",
+   "tier": "abc-eg",
+   "title": "E - Colorful Route",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c8531d059de3a03e2c3704baf6b741eff9cf58d6899a38a2e4ae604036dce787",
+   "build_sha256": "39d862afc0a94bf64e4a5d9d00a524903ac8013db390f800727ed52cf06c6a3f",
+   "n_tests": 106
+  },
+  {
+   "task_id": "abc485_f",
+   "contest": "abc485",
+   "tier": "abc-eg",
+   "title": "F - Big Bridge",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "360e2881a032aa02223c29fddc8474e37120616c98dd06e9a18a450d6a439d2f",
+   "build_sha256": "1bd15f1252933e53f4434198f45334da0855f8fe489520ce79f566313acc473e",
+   "n_tests": 96
+  },
+  {
+   "task_id": "abc485_g",
+   "contest": "abc485",
+   "tier": "abc-eg",
+   "title": "G - Similar Adjacent Subarrays",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "878c7c35af1de8b63c3c63d620f7cb2916451f24e66c365bbd9db0a116d85432",
+   "build_sha256": "817e64d549003237230878574386661eab934feb6bdc917126f488f153f1201a",
+   "n_tests": 106
+  },
+  {
+   "task_id": "agc079_a",
+   "contest": "agc079",
+   "tier": "arc-agc",
+   "title": "A - Tree Contraction Sequence",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "45370d5e4db3f20ba0cfa046b6377e30ed070111bae1c848ba23c14b90ceb676",
+   "build_sha256": "91acfc8bde10d9de93df2e87a04ddad9b8e1b22c59dc663a347fb377c3b5a3ea",
+   "n_tests": 84
+  },
+  {
+   "task_id": "agc079_b",
+   "contest": "agc079",
+   "tier": "arc-agc",
+   "title": "B - Range Record",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "2addf7a238b7461e9abd392444416713dab437c70da788d591472cd4fb4d06d8",
+   "build_sha256": "1b2afac618d82b2b5484c51f88e330c597186ddc6bdd5a4f93149c4c188a51fe",
+   "n_tests": 74
+  },
+  {
+   "task_id": "agc079_c",
+   "contest": "agc079",
+   "tier": "arc-agc",
+   "title": "C - Sort by Queue and Reverse",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "af78d719610123a67ac162fdbe25faa5a454848e289f32c705503dcb7ecd52f6",
+   "build_sha256": "8e09e0b2d948ea5fe932c51f2cfea01808e46bbb623a2d8b23301b14c40b4e43",
+   "n_tests": 72
+  },
+  {
+   "task_id": "agc079_d",
+   "contest": "agc079",
+   "tier": "arc-agc",
+   "title": "D - Yet Another Degree Sequence Problem",
+   "time_limit_s": 8.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "37528f8f677070432633f73a6298128f289174f3cff424db447f39d88f803168",
+   "build_sha256": "94c39f9cb4d3c4d3ec192ff1afd3a4a7dc2a97b406a1d6fdd7d21a545c4fecc0",
+   "n_tests": 76
+  },
+  {
+   "task_id": "arc234_a",
+   "contest": "arc234",
+   "tier": "arc-agc",
+   "title": "A - Reverse, Recurse",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c457375a84a596d49ac374ef97b1e3a393f9937baf3a6e082c6d06d504049bb4",
+   "build_sha256": "fc77b3c5c09c8e3b97a023e33be74b6afefc52b2e90c9a51c24af2079d4eaadf",
+   "n_tests": 90
+  },
+  {
+   "task_id": "arc234_b",
+   "contest": "arc234",
+   "tier": "arc-agc",
+   "title": "B - Three Vertices",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "21b9dd02b3e691ab28cad0d2d417b6d89c75272e1e0cb42e0367b1ef23f5152b",
+   "build_sha256": "fd61860d92511ac8aae994a913eff9b1c6497384df791bf3298e5c20c5591331",
+   "n_tests": 100
+  },
+  {
+   "task_id": "arc234_c",
+   "contest": "arc234",
+   "tier": "arc-agc",
+   "title": "C - Blindfolded Cubing",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "c8e390173b96ca34c937efa433103def195e1d4d667f2251bb320ed63901c828",
+   "build_sha256": "f12bc0b3d6f587533cbd199c7d3d4a0e95f4200657163cb599848c95424e61d5",
+   "n_tests": 60
+  },
+  {
+   "task_id": "arc234_d",
+   "contest": "arc234",
+   "tier": "arc-agc",
+   "title": "D - Greedy Balancer",
+   "time_limit_s": 2.0,
+   "memory_limit_mib": 1024,
+   "statement_sha256": "2c209ca63ca431f07a730c2f933a031e2a838d88a15bc572ab301f988ca7617b",
+   "build_sha256": "cdd01e685a10834385da32fbc1c3eb0585054bd9bcb63c35f1a21be04d2b0636",
+   "n_tests": 96
+  }
+ ],
+ "excluded": [],
+ "toolchain": {
+  "gxx": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "python": "3.12.3"
+ }
+}

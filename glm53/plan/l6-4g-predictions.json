@@ -1,0 +1,73 @@
+{
+ "study": "L6-4g",
+ "written": "2026-11-22 11:30 PT, before any GLM-5.3 load",
+ "method": "drafter's judgment priors scaled from measured Hy4 B/A (L6-4h) and our 2026-10-09 GLM-5.3 NVFP4 run; the L6 speed model was not refit for GLM (deviation from the house rule, recorded). Bands are judgment ranges, not intervals.",
+ "metric": "S workload: completion tokens / round wall seconds, 512 output tokens, ignore_eos, thinking off",
+ "G-B": {
+  "c1_tps": {
+   "central": 30,
+   "low": 15,
+   "high": 60
+  },
+  "c16_tps": {
+   "central": 110,
+   "low": 40,
+   "high": 220
+  },
+  "reason": "like Hy4 B, decode bound by Grace expert reads; GLM holds 148.5 vs 166.5 GiB per Station in Grace and has 40B vs 49B active, so a little faster than Hy4 B (27.8 / 94.3)"
+ },
+ "G-N": {
+  "c1_tps": {
+   "central": 75,
+   "low": 50,
+   "high": 95
+  },
+  "c16_tps": {
+   "central": 480,
+   "low": 300,
+   "high": 620
+  },
+  "reason": "all in HBM, 4-bit experts; the 84.8 / 588 decode-only rates minus prefill time inside each round"
+ },
+ "quality": {
+  "Q2_mmlu_pro_GB_minus_HB": "no measurable difference (interval includes 0) expected; no direction predicted",
+  "Q1_gsm8k": "both 96-98%, no measurable difference",
+  "GN_minus_GB": "no measurable difference on Q1; Q2 within 3 points",
+  "needles": "all 18 of 18 for G-B and G-N"
+ },
+ "part3": {
+  "written": "2026-11-23 PT, after Parts 1-2 results, before any Part 3 prompt was sent to either model",
+  "file_sha256_before_part3_key": "5b101f288afd6fab1d1d05a1d1a751ff934a79067234d3d4e86d03153ece34ad",
+  "method": "drafter's judgment priors; per-tier mean pass rate (passes/4), cap 32,768, vendor sampling",
+  "set_at_writing": "28 tasks provisional (abc483, agc079 a-c, abc484, abc485, arc234); final freeze 2026-11-22 22:46 PT: 29 tasks (agc079_d added after its quiet-host re-check); predicted values unchanged",
+  "tiers": {
+   "abc-ad": {
+    "hy4": 0.95,
+    "glm": 0.95,
+    "low": 0.85,
+    "high": 1.0
+   },
+   "abc-eg": {
+    "hy4": 0.55,
+    "glm": 0.6,
+    "low": 0.3,
+    "high": 0.85
+   },
+   "arc-agc": {
+    "hy4": 0.15,
+    "glm": 0.2,
+    "low": 0.0,
+    "high": 0.45
+   }
+  },
+  "overall": {
+   "hy4": 0.6,
+   "glm": 0.63,
+   "low": 0.45,
+   "high": 0.8
+  },
+  "reading": "no measurable difference (expected about 70%); no direction predicted with confidence, slight lean GLM (Z.ai markets GLM-5.3 as its top coding model)",
+  "cap_hits": "GLM >= Hy4 (Part 2: GLM at max effort hit the 16K cap more often); both under 15% of replies at 32K",
+  "gate_failures": "under 2% for both"
+ }
+}
